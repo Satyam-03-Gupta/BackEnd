@@ -1,0 +1,1 @@
+alert('the file is loaded')
