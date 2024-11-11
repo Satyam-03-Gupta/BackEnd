@@ -11,10 +11,11 @@
     --theme-dark: 0 0 0;
 }
 
-body {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Poppins", serif;
 }
 
 header {
@@ -40,6 +41,7 @@ header {
     font-weight: bold;
     margin-top: 8px;
     text-shadow: 1px 1px 2px rgba(38, 34, 34, 0.382);
+    color: #000;
 }
 
 .navicon {
@@ -67,11 +69,13 @@ header {
     padding: 5px 12px;
     margin-right: 34px;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 500;
     letter-spacing: 1.2px;
 }
 
-button {
+button,
+.btn-1,
+.btn-2 {
     font-size: 1rem;
     line-height: 1.5rem;
     padding: 8px 20px;
@@ -80,9 +84,138 @@ button {
     color: #fff;
     font-weight: 600;
     border: none;
+    font-family: "Poppins", serif;
+    text-decoration: none;
 }
 
 .button {
     background-color: #fff;
     color: #000;
+}
+
+.body {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    color: #fff;
+}
+
+.profile_image img {
+    position: absolute;
+    padding-top: 52px;
+    gap: 4rem;
+    z-index: 1;
+
+}
+
+.background-image {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: url(./images/bacckground.jpg);
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+    z-index: 0;
+    filter: brightness(0.8);
+}
+
+.background-cover {
+    position: relative;
+    background: black;
+    width: 100%;
+    height: 70vh;
+    z-index: 0;
+    object-fit: cover;
+}
+
+
+.background-details {
+    display: flex;
+    flex-direction: column;
+    max-width: 45%;
+    margin-right: 7%;
+    padding-bottom: 2%;
+}
+
+.typewriter {
+    display: flex;
+    flex-direction: column;
+    text-shadow: 2px 2px 2px #000;
+    padding: 12px 0;
+}
+
+.typewriter h2 {
+    font-size: 32px;
+}
+
+#element {
+    font-size: 62px;
+}
+
+.btn-box {
+    display: flex;
+    gap: 2rem;
+}
+
+.description {
+    text-shadow: 1px 1px 0 #000;
+    font-weight: 500;
+    padding: 20px 0;
+}
+
+.body-below {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 30px 60px;
+}
+
+.body-detail span {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.color {
+    color: #f04343;
+    font-weight: 700;
+}
+
+.body-detail-more {
+    font-size: 20px;
+    line-height: 2.8;
+    font-weight: 500;
+}
+
+/* ---------------------------body_part------------------------------------------ */
+
+.about-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 8%;
+
+}
+
+.body-part {
+    display: flex;
+    position: relative;
+    padding-inline: 7%;
+}
+
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.part1 {
+    display: flex;
+    max-width: 40%;
+}
+
+.part2 {
+    max-width: 40%;
 }
