@@ -21,7 +21,6 @@
 header {
     position: relative;
     display: flex;
-    position: sticky;
     flex-direction: column;
     top: 0;
     width: 100%;
@@ -73,6 +72,11 @@ header {
     letter-spacing: 1.2px;
 }
 
+.btn-box{
+    display: flex;
+    gap: 2rem;
+}
+
 button,
 .btn-1,
 .btn-2 {
@@ -96,16 +100,9 @@ button,
 .body {
     position: relative;
     width: 100%;
+    height: 75vh;
     overflow: hidden;
     color: #fff;
-}
-
-.profile_image img {
-    position: absolute;
-    padding-top: 52px;
-    gap: 4rem;
-    z-index: 1;
-
 }
 
 .background-image {
@@ -113,30 +110,40 @@ button,
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background: url(./images/bacckground.jpg);
-    width: 100%;
+    background: url(./images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
     height: 75vh;
-    object-fit: cover;
-    z-index: 0;
-    filter: brightness(0.8);
+    z-index: -1;
 }
 
 .background-cover {
-    position: relative;
-    background: black;
+    display: flex;
+    position: absolute;
     width: 100%;
-    height: 70vh;
+    height: 75vh;
     z-index: 0;
-    object-fit: cover;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6195728291316527) 0%, rgba(0, 0, 0, 0.375875350140056) 61%, rgba(0, 0, 0, 0.571953781512605) 87%, rgba(0, 0, 0, 1) 100%);
+    gap: 7rem;
+    align-items: center;
+    overflow: hidden;
 }
 
+.profile_image {
+    flex: 1;
+    max-width: 45%;
+    position: relative;
+    top: 25px;
+    right: 25px;
+}
 
 .background-details {
     display: flex;
+    flex: 1;
     flex-direction: column;
     max-width: 45%;
-    margin-right: 7%;
-    padding-bottom: 2%;
 }
 
 .typewriter {
@@ -152,11 +159,6 @@ button,
 
 #element {
     font-size: 62px;
-}
-
-.btn-box {
-    display: flex;
-    gap: 2rem;
 }
 
 .description {
@@ -189,19 +191,12 @@ button,
 
 /* ---------------------------body_part------------------------------------------ */
 
-.about-title {
-    font-size: 32px;
-    font-weight: 700;
-    margin-left: 8%;
-
-}
 
 .body-part {
     display: flex;
     position: relative;
-    padding-inline: 7%;
+    margin-inline: 7%;
 }
-
 
 .about {
     display: flex;
@@ -213,9 +208,75 @@ button,
 
 .part1 {
     display: flex;
-    max-width: 40%;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.about-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.part1 h1 {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.part1 h3 {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.about-btn {
+    max-width: 20%;
+    background: #e32319;
+    margin: 18px 0;
+    padding: 12px 20px;
+    border-radius: 7px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    font-family: "Poppins", serif;
+    text-decoration: none;
+    align-items: center
+}
+
+.about-svg {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-transform: uppercase;
+    padding: 8px 0;
 }
 
 .part2 {
-    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+}
+
+.main-images img{
+    border-radius: 50px;
+}
+
+.image-linear{
+    display: flex;
+    justify-content: center;
+    border: 2px solid #e32319;
+  
+}
+
+.images img{
+    width: 70%;    
+    border: 2px solid yellow;
 }

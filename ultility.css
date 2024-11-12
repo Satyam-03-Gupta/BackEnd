@@ -4,3 +4,6 @@
 .border{
     border: 2px solid rgb(255, 230, 0);
 }
+.red{
+    border: 2px solid red;
+}
