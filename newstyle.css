@@ -267,16 +267,22 @@ button,
 
 .main-images img{
     border-radius: 50px;
+    max-width: 100%;
 }
 
 .image-linear{
     display: flex;
+    justify-content: center;  
+}
+
+.images{
+    display: flex;
     justify-content: center;
-    border: 2px solid #e32319;
-  
+    position: relative;
+    gap: 10px;
 }
 
 .images img{
-    width: 70%;    
-    border: 2px solid yellow;
+    width: 32%;    
+    border-radius: 8px;
 }
