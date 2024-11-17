@@ -90,6 +90,7 @@ button,
     border: none;
     font-family: "Poppins", serif;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .button {
@@ -127,8 +128,8 @@ button,
     background: rgb(0, 0, 0);
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.6195728291316527) 0%, rgba(0, 0, 0, 0.375875350140056) 61%, rgba(0, 0, 0, 0.571953781512605) 87%, rgba(0, 0, 0, 1) 100%);
     gap: 7rem;
-    align-items: center;
     overflow: hidden;
+    align-items: center;
 }
 
 .profile_image {
@@ -288,40 +289,62 @@ button,
     border-radius: 8px;
 }
 
+/* -----------------services-------------------- */
+#Services{
+    display: flex;
+    margin-inline: 7%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*------------ CONTACT US----------------------------------------------------- */
+#contact {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    background: url(./images/contact.jpg) no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(38, 34, 34, 0.382);
+}
 
 #contactus {
     display: flex;
+    width: 100%;
     flex-direction: column;
-    position: relative;
     margin: 3% 7%;
+    align-items: center;
 }
 
 .contactbox {
     position: relative;
     display: flex;
     justify-content: space-between;
-    border: 2px solid gold;
-    height: 70vh;
-    width: 100%;
-    background: url(./images/about2.jpg) no-repeat center center;
-    background-size: cover;
-    color: #fff;
-    text-shadow: 1px 1px 2px rgba(38, 34, 34, 0.382);
-    z-index: -1;
-}
-
-.background-cover {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 75vh;
-    z-index: 0;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6195728291316527) 0%, rgba(0, 0, 0, 0.375875350140056) 61%, rgba(0, 0, 0, 0.571953781512605) 87%, rgba(0, 0, 0, 1) 100%);
-    gap: 7rem;
-    align-items: center;
-    overflow: hidden;
+    gap: 3rem;
 }
 
 .contact-left {
@@ -338,40 +361,75 @@ button,
 .contact-left label {
     font-size: 22px;
     font-weight: 500;
+    color: #f04343;
+    font-family: "Oswald", sans-serif;
 }
 
 .contact-left input {
     padding: 1rem 15rem 1rem 1rem;
     margin: 10px 0px;
     background: transparent;
-    border: 2px solid #fff;
-
+    color: #fff;
 }
+
 
 .contact-left textarea {
     background: transparent;
+    color: #ffff;
 }
 
 input::placeholder,
 textarea::placeholder {
     color: #fff;
     text-shadow: 1px 1px 2px rgba(38, 34, 34, 0.382);
-
-
 }
 
+#message {
+    padding: 12px;
+    transition: background-color 0.3s ease;
+}
 
+input,
+textarea,
+iframe {
+    z-index: 10;
+}
 
 .contact-right {
     position: relative;
-    max-width: 45%;
+    max-width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 28px;
+    flex-direction: column;
 }
 
 .map-responsive iframe {
     border-radius: 12px;
     opacity: 0.9;
+}
+
+.right-details {
+    display: flex;
+    gap: 1rem;
+    padding: 12px 0px;
+}
+
+.right-details i {
+    transform: rotate(90deg);
+}
+
+.right-container-phone {
+    display: flex;
+    justify-content: space-between;
+}
+
+.address1 span a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.address2 {
+    width: 50%;
 }
