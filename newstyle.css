@@ -290,11 +290,59 @@ button,
 }
 
 /* -----------------services-------------------- */
-#Services{
-    display: flex;
-    margin-inline: 7%;
+
+.services {
+    position: relative;
+    margin: 1% 7% 3% 7%;
+    height: 100%;
+
 }
 
+.service-heading>h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.allboxes , .img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    z-index: 0;
+}
+
+.box {
+    position: relative;
+    width: 25%;
+    border: 2px solid;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    padding: 50px;
+}
+
+.box a{
+    color: #000;
+    text-decoration: none;
+}
+
+.subtitles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 42px 0;
+}
+
+.img img{
+    width: 40%;
+    height: 50%;
+    border-radius: 8px;
+
+}
 
 
 
@@ -370,12 +418,16 @@ button,
     margin: 10px 0px;
     background: transparent;
     color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5); 
 }
 
 
 .contact-left textarea {
     background: transparent;
     color: #ffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5); 
 }
 
 input::placeholder,
@@ -423,6 +475,7 @@ iframe {
 .right-container-phone {
     display: flex;
     justify-content: space-between;
+    padding-left: 10px;
 }
 
 .address1 span a {
