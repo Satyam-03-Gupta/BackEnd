@@ -1,17 +1,24 @@
-.margin1{
+.margin1 {
     margin: 20px 100px;
 }
-.margintd{
-    margin-top: 10px;
-    margin-bottom: 45px;}
 
-.border{
+.margintd {
+    margin-top: 10px;
+    margin-bottom: 45px;
+}
+
+.border {
     border: 2px solid rgb(255, 230, 0);
 }
-.red{
+
+.red {
     border: 2px solid red;
 }
 
-.green{
+.green {
     border: 2px solid rgb(51, 255, 0);
+}
+
+.pad1 {
+    padding: 6px 0;
 }
