@@ -38,8 +38,8 @@ header {
 .sitename {
     font-size: 30px;
     font-weight: bold;
-    margin-top: 8px;
-    text-shadow: 1px 1px 2px rgba(38, 34, 34, 0.382);
+    margin-top: 8px;    
+text-shadow: 1px 1px 2px rgba(38, 34, 34, 0.382);
     color: #000;
 }
 
@@ -350,7 +350,7 @@ button,
     position: relative;
     display: flex;
     justify-content: space-between;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     background: url(./images/contact.jpg) no-repeat center center;
     background-size: cover;
@@ -470,14 +470,14 @@ iframe {
 /* General Styling */
 .bmi-container {
     display: flex;
-    margin-inline: 8%;
-    height: 65vh;
+    margin: 1.2% 7%;
+    height: 75vh;
     position: relative;
     justify-content: flex-end;
     font-weight: 600;
 }
 
-.bmi-left-details{
+.bmi-left-details {
     display: flex;
 }
 
@@ -487,28 +487,26 @@ iframe {
     height: 7rem;
 }
 
-.bmi-left-details h1{
+.bmi-left-details h1 {
+    position: absolute;
+    left: 245px;
+    top: 16px;
     display: flex;
-    font-size: 32px;
+    font-size: 52px;
     font-family: "Oswald", sans-serif;
-    width: 100%;
     font-weight: 700;
-    top: 15px;
-    position: relative;
+    text-shadow: 5px 5px 3px rgba(38, 34, 34, 0.382);
 }
 
-/* Left Section Design */
 .imagedesign img {
     position: relative;
     transform: scaleX(-1);
-    width: 70%;
+    width: 88%;
     height: auto;
     z-index: 0;
-    width: 100%;
-    top: 28%;    
+    top: 28%;
 }
 
-/* Main BMI Box */
 .bmi-main-container {
     display: flex;
     justify-content: center;
@@ -522,11 +520,14 @@ iframe {
     flex-direction: column;
     width: 100%;
     margin-top: 1rem;
+    margin-right: 8em;
 }
 
 .bmibox h1 {
     font-size: 36px;
     padding: 20px 0;
+    text-shadow: 3px 3px 2px rgba(38, 34, 34, 0.382);
+
 }
 
 /* Form Content */
@@ -608,5 +609,73 @@ iframe {
 .result #result {
     font-size: 28px;
     font-weight: bold;
-    color: #333;
+    color: #f04343;
+}
+
+
+/*FOOTER*/
+
+.underfooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #27282c;
+
+}
+
+.bNavicon {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.bNcontainer {
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.bNcontainer img{
+    width: 60px;
+}
+.bNcontainer h2{
+margin-top: 20px;
+}
+
+.bNavicon {
+    max-width: 45%;
+    padding: 0px 50px;
+}
+
+.bottonNav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin: 60px 0 50px;
+    
+}
+
+.bottonNav a {
+    color:#fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.bottonNav span{
+    color: #f04343;
+    font-weight: 600;
+}
+
+.copyrightfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid lightgrey;
+    background-color: ghostwhite;
+
 }
