@@ -1,47 +1,3 @@
-// // const catme = require('cat-me')
-// // console.log(catme());
-// const http = require('http')
-
-
-
-// const server = http.createServer((req, res) => {
-//     if (req.url == "/about") {
-//         res.end("The about page")
-//     }
-//     if (req.url == "/profile") {
-//         res.end("The profile page")
-//     }
-//     if (req.url == "/") {
-//         res.end("The homepage page")
-//     }
-
-// })
-// server.listen(3000)
-
-
-
-// const express = require('express');
-// const app = express();
-
-// app.set('view engine', 'ejs')
-
-// app.get('/', (req, res) => {
-//     res.send('hello world')
-
-// })
-// app.get('/about', (req, res) => {
-//     res.send('About page ')
-// })
-// app.get('/profile', (req, res) => {
-//     res.send('the profile page')
-// })
-
-// app.listen(3000)
-
-
-
-
-
 const express = require('express');
 const morgan = require('morgan');
 const app = express()
@@ -63,20 +19,17 @@ app.get('/about', (req, res) => {
     res.send('the about page now loading ')
 })
 
-app.get('/register', (req, res) => {
-    res.render('register')
-})
-
-app.post('/register', async (req, res) => {
-    const { username, email, password } = req.body
+app.post('/', async (req, res) => {
+    const { username, email, phone, message } = req.body
 
     const newuser = await userModel.create({
         username: username,
         email: email,
-        password: password
+        phone: phone,
+        message: message
 
     })
-    res.send('user register')
+    res.send('sucessful')
 })
 
 app.get('/get-users', (req, res) => {

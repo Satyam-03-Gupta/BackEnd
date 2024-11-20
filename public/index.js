@@ -1,1 +1,1 @@
-alert('the file is loaded')
+// alert('the file is loaded')
