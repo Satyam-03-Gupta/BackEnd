@@ -42,9 +42,9 @@
 
             <div class="nav-item">
                 <a href="#">HOME</a>
-                <a href="#">ABOUT US</a>
-                <a href="#">CONTACT US</a>
-                <a href="#">PRIVACY POLICY</a>
+                <a href="about.ejs">ABOUT US</a>
+                <a href="contact.ejs">CONTACT US</a>
+                <a href="privacy.ejs">PRIVACY POLICY</a>
             </div>
             <div>
                 <button>Get Started</button>
@@ -100,9 +100,15 @@
                                 speed: 180,
                                 loop: true,
                             })
-                                .type("RV FITNESS CLUB").delete()
-                                .type("Strength Come With Constancy  ").delete()
-                                .type("Fitness and workout  ").delete()
+                                .type("RV FITNESS CLUB")
+                                .pause(1000)
+                                .delete()
+                                .type("Strength Come With Constancy  ")
+                                .pause(1000)
+                                .delete()
+                                .type("Fitness and workout  ")
+                                .pause(1000)
+                                .delete()
 
                                 .go();
                         </script>

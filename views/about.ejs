@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitnessandworkout</title>
+    <title>About US</title>
     <link rel="stylesheet" href="newstyle.css">
     <link rel="stylesheet" href="ultility.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- Font Awesome CDN -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -30,6 +28,11 @@
 </head>
 
 <body>
+    <style>
+        .body-part {
+            margin-top: 3rem;
+        }
+    </style>
 
 
     <header>
@@ -41,10 +44,10 @@
             </div>
 
             <div class="nav-item">
-                <a href="#">HOME</a>
-                <a href="#">ABOUT US</a>
-                <a href="#">CONTACT US</a>
-                <a href="#">PRIVACY POLICY</a>
+                <a href="/">HOME</a>
+                <a href="about.ejs">ABOUT US</a>
+                <a href="contact.ejs">CONTACT US</a>
+                <a href="privacy.ejs">PRIVACY POLICY</a>
             </div>
             <div>
                 <button>Get Started</button>
@@ -56,30 +59,128 @@
 
             </script>
         </div>
-
-        <!-- <div class="navbaritems">
-            <i class="fa fa-bars" onclick="openNav();"></i>
-            <a href="https://timetosweat.in"><i class="fa fa-home"></i></a>
-            <span class="hide">
-                <a href="fitnessandworkout.html">Fitness&Workout</a></span>
-            <a href="looseweight.html">Loose Weight</a>
-            <span class="hide"></span><a href="buildmuscle.html">Build Muscle</a></span>
-
-            <div class="searchbar">
-                <input type="search" placeholder=" Explore exercise options 💪...">
-            </div>
-<p>
-                                                        Now we have a international Standard equipment with certified
-                                                        trainers.
-                                                        Our internationally certified gym trainers help accomplish your
-                                                        fitness and weight loss goals, quicker. </p>
-                                                        <p align="center">Get in shape, boost confidence, and transform your body with our gym's effective
-                        expert
-                        guidance.<br> <span class="p_hide">
-                            Join our supportive community and achieve your<span class="v"> muscle building goals
-                            </span>with confidence...</span>
-                    </p>
-                </div>
-            </div> -->
     </header>
-    <div class="body">
+
+    <section class="body-part">
+        <div class="about">
+            <div class="part1">
+                <h2 class="main-title">About <span class="color">Us</span></h2>
+                <h1 class="welcome-title">WELCOME TO RV FITNESS</h1>
+                <h3 class="color description-title">Hold me up, I'll make you strong as iron</h3>
+
+                <p style="padding-bottom:20px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam enim,
+                    voluptates aspernatur
+                    suscipit, amet ea recusandae unde asperiores ab, possimus esse? Illo harum natus error doloremque,
+                    nemo quidem iusto. Perferendis.</p>
+
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256  "
+                    style="display: none;">
+                    <defs>
+                        <symbol id="my-icon" viewBox="0 0 256 256">
+                            <g fill="#f04343" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <g transform="scale(9.84615,9.84615)">
+                                    <path
+                                        d="M13,1c-6.61719,0 -12,5.38281 -12,12c0,6.61719 5.38281,12 12,12c6.61719,0 12,-5.38281 12,-12c0,-6.61719 -5.38281,-12 -12,-12zM13,3c5.53516,0 10,4.46484 10,10c0,5.53516 -4.46484,10 -10,10c-5.53516,0 -10,-4.46484 -10,-10c0,-5.53516 4.46484,-10 10,-10zM17.1875,7.0625c-0.14844,0.02344 -0.27344,0.10156 -0.375,0.25l-4.90625,7.28125l-2.3125,-2.28125c-0.19922,-0.30078 -0.58203,-0.32422 -0.78125,-0.125l-0.90625,0.90625c-0.19922,0.30078 -0.19922,0.70703 0,0.90625l3.5,3.5c0.19922,0.10156 0.48047,0.3125 0.78125,0.3125c0.19922,0 0.51953,-0.10547 0.71875,-0.40625l6,-8.8125c0.19922,-0.30078 0.08594,-0.58203 -0.3125,-0.78125l-1,-0.71875c-0.10156,-0.05078 -0.25781,-0.05469 -0.40625,-0.03125z">
+                                    </path>
+                                </g>
+                            </g>
+                        </symbol>
+                    </defs>
+                </svg>
+                <div class="about-svg">
+                    <svg width="32" height="32">
+                        <use href="#my-icon" />
+                        <p>Certified Trainers</p>
+                    </svg>
+                </div>
+                <div class="about-svg">
+                    <svg width="32" height="32">
+                        <use href="#my-icon" />
+                        <p>LADIES GYM TRAINERS</p>
+                    </svg>
+                </div>
+                <div class="about-svg">
+                    <svg width="32" height="32">
+                        <use href="#my-icon" />
+                        <p>PROFESSIONAL TRAINING</p>
+                    </svg>
+                </div>
+                <div class="about-svg">
+                    <svg width="32" height="32">
+                        <use href="#my-icon" />
+                        <p>International Graded Equipments</p>
+                    </svg>
+                </div>
+
+
+                <a href="" class="about-btn">
+                    JOIN NOW
+                </a>
+
+            </div>
+            <div class="part2">
+
+                <div class="main-images">
+                    <img src="./images/about1.jpg" alt="">
+                </div>
+
+                <div class="image-linear">
+
+                    <div class="images">
+                        <img src="./images/about2.jpg" alt="">
+                        <img src="./images/about3.jpg" alt="">
+                        <img src="./images/about4.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="underfooter">
+            <div class="bNavicon">
+                <div class="bNcontainer">
+
+                    <img class="icon" src="./images/logo.png" alt="reloading...">
+                    <h2 class="main-title">RV <span class="color">FITNESS</span></h2>
+                </div><br>
+
+
+                <p><span>Stay fit with TimetoSweat! Our website offers a comprehensive gym workout schedule to help you
+                        achieve your fitness goals. Whether you're looking to lose weight, build muscle, or simply stay
+                        in shape, we've got you covered. Get ready to sweat and transform your body. Start your fitness
+                        journey today!</span> </p>
+            </div>
+
+            <div class="bottonNav">
+                <div class="aboutbottom">
+                    <span>ABOUT US</span>
+                    <ul type="square">
+                        <li><a href="about.html">RV Fitness Club</a></li>
+                </div>
+                <div class="terms">
+                    <span>TERMS</span>
+                    <ul type="square">
+                        <li><a href="#">Terms and condition</a></li>
+                </div>
+                <div class="cotactbottom">
+                    <span>CONTACT</span>
+                    <ul type="square">
+                        <li><a href="#">+91 9330378959</a> </li>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyrightfooter">
+            <p><br><br>Copyrights © 2023 Rv Fitness Club. All rights reserved.
+                Rv Fitness Team is Powered by KingShuk❤️.</p>
+        </div>
+        <script src="script.js"></script>
+        <script src="index.js"></script>
+    </footer>
+</body>
+
+</html>

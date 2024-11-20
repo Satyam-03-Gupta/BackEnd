@@ -15,9 +15,17 @@ app.use(express.static("public"))
 app.get('/', (req, res) => {
     res.render('index')
 })
-app.get('/about', (req, res) => {
-    res.send('the about page now loading ')
+app.get('/about.ejs', (req, res) => {
+    res.render('about')
 })
+app.get('/contact.ejs', (req, res) => {
+    res.render('contact')
+})
+app.get('/privacy.ejs', (req, res) => {
+    res.render('privacy')
+})
+
+
 
 app.post('/', async (req, res) => {
     const { username, email, phone, message } = req.body
