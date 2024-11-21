@@ -22,3 +22,9 @@
 .pad1 {
     padding: 6px 0;
 }
+
+.inverted {
+    filter: saturate(3) contrast(1.2);
+
+    text-shadow: 2px 2px 2px #000;
+}

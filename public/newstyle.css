@@ -38,8 +38,8 @@ header {
 .sitename {
     font-size: 30px;
     font-weight: bold;
-    margin-top: 8px;    
-text-shadow: 1px 1px 2px rgba(38, 34, 34, 0.382);
+    margin-top: 8px;
+    text-shadow: 1px 1px 2px rgba(38, 34, 34, 0.382);
     color: #000;
 }
 
@@ -308,13 +308,13 @@ button,
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 3rem;
+    gap: 2rem;
     z-index: 0;
 }
 
 .box {
     position: relative;
-    width: 25%;
+    width: 27%;
     border: 2px solid;
     border-radius: 6px;
     display: flex;
@@ -323,12 +323,26 @@ button,
     font-size: 22px;
     font-family: "Poppins", serif;
     font-weight: 700;
-    padding: 50px;
+    padding: 27px 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.box:hover a {
+    color: #e32319;
+    transition: all 0.1 ease;
 }
 
 .box a {
+    bottom: 1.5em;
     color: #000;
     text-decoration: none;
+    padding: 12px 0;
 }
 
 .subtitles {
@@ -338,12 +352,94 @@ button,
     margin: 42px 0;
 }
 
-.img img {
-    max-width: 40%;
-    min-height: 50%;
-    border-radius: 8px;
-
+.Service-provide {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
 }
+
+.imgcontainer {
+    position: relative;
+    max-width: 40%;
+    min-height: 32%;
+}
+
+.imgcontainer img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+
+.imgcontainer:hover p {
+    transition: all 0.2s ease;
+    transform: scale(1.1);
+}
+
+.imgcontainer p {
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* ---------------contactus------------- */
+
+.chooseus {
+    width: 100%;
+    height: 60vh;
+    background-color: #27282c;
+    color: #fff;
+}
+
+.chooseus h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 0;
+    padding: 5% 0 0;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 1.2px;
+    text-decoration:  wavy underline #e32319;
+    text-underline-offset: 10px;
+}
+
+.chooseeus-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 85%;
+    min-height: 45%;
+    gap: 1.5rem;
+    margin: 0 auto;
+}
+
+.chooseeus-container-box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 250px;
+    text-align: center;
+}
+
+.chooseeus-container-box1 img{
+    width: 85px;
+    height: 85px;
+}
+
+
+
 
 /*------------ CONTACT US----------------------------------------------------- */
 #contact {
@@ -636,11 +732,12 @@ iframe {
     margin-top: 70px;
 }
 
-.bNcontainer img{
+.bNcontainer img {
     width: 60px;
 }
-.bNcontainer h2{
-margin-top: 20px;
+
+.bNcontainer h2 {
+    margin-top: 20px;
 }
 
 .bNavicon {
@@ -654,16 +751,16 @@ margin-top: 20px;
     width: 100%;
     justify-content: space-around;
     margin: 60px 0 50px;
-    
+
 }
 
 .bottonNav a {
-    color:#fff;
+    color: #fff;
     font-size: 18px;
     text-decoration: none;
 }
 
-.bottonNav span{
+.bottonNav span {
     color: #f04343;
     font-weight: 600;
 }
