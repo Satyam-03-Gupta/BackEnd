@@ -408,7 +408,7 @@ button,
     font-weight: 700;
     font-size: 32px;
     letter-spacing: 1.2px;
-    text-decoration:  wavy underline #e32319;
+    text-decoration: wavy underline #e32319;
     text-underline-offset: 10px;
 }
 
@@ -433,13 +433,35 @@ button,
     text-align: center;
 }
 
-.chooseeus-container-box1 img{
+.chooseeus-container-box1 img {
     width: 85px;
     height: 85px;
 }
 
+/* ----------------REVIEW----------------- */
 
+.review {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    align-items: center;
+}
 
+.review h2 {
+    margin: 24px 0;
+    font-size: 32px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.reviewcontainer {
+    width: 80%;
+    border: 2px solid;
+
+}
 
 /*------------ CONTACT US----------------------------------------------------- */
 #contact {
