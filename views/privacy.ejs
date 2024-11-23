@@ -34,7 +34,7 @@
         flex-wrap: wrap;
     }
 
-    .bodypart{
+    .bodypart {
         margin: 2% 7%;
     }
 </style>
@@ -57,14 +57,14 @@
                 <a href="privacy.ejs">PRIVACY POLICY</a>
             </div>
             <div>
-                <button>Get Started</button>
-                <button class="button">CALL NOW</button>
+                <a href="/" class="btn-1">Get Started</a>
+                <button class="button" id="dial">CALL NOW</button>
+                <script>
+                    document.getElementById('dial').addEventListener('click', function () {
+                        window.location.href = "tel:+919330378959";
+                    })
+                </script>
             </div>
-            <script>
-                var active = document.querySelector('. name active');
-                active.classList.add('activeNav');
-
-            </script>
         </div>
     </header>
     <section class="bodypart">
@@ -465,7 +465,6 @@
             <p><br><br>Copyrights © 2023 Rv Fitness Club. All rights reserved.
                 Rv Fitness Team is Powered by KingShuk❤️.</p>
         </div>
-        <script src="script.js"></script>
         <script src="index.js"></script>
     </footer>
 </body>

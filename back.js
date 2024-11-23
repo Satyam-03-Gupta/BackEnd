@@ -3,7 +3,9 @@ const morgan = require('morgan');
 const app = express()
 const dbConnection = require('./config/db')
 const userModel = require('./models/user')
+const path = require('path');
 
+app.use('/public', express.static(path.join(__dirname, 'public')));
 app.set("view engine", 'ejs')
 app.use(morgan('dev'))
 

@@ -50,14 +50,13 @@
                 <a href="privacy.ejs">PRIVACY POLICY</a>
             </div>
             <div>
-                <button>Get Started</button>
-                <button class="button">CALL NOW</button>
+                <button class="button" id='dial'>CALL NOW</button>
+                <script>
+                    document.getElementById('dial').addEventListener('click', function () {
+                        window.location.href = "tel:+919330378959";
+                    })
+                </script>
             </div>
-            <script>
-                var active = document.querySelector('. name active');
-                active.classList.add('activeNav');
-
-            </script>
         </div>
     </header>
     <section id="contact">
@@ -124,6 +123,47 @@
 
             </div>
         </div>
+    </section>
+    <section class="chooseus">
+        <h1>Why RV Fitness?</h1>
+        <div class="chooseeus-container ">
+            <div class="chooseeus-container-box1">
+                <img src="./images/QUALITY.png" alt="">
+                <h2>QUALITY EQUIPMENT</h2>
+                <p>We have quality equipments with professional gym trainers</p>
+            </div>
+            <div class="chooseeus-container-box1">
+                <img src="./images/NUTRITIONs.png" alt="">
+                <h2>NUTRITION PLAN</h2>
+                <p>We train based on body performance and scheduled timings</p>
+            </div>
+            <div class="chooseeus-container-box1">
+                <img src="./images/UNISEXss.png" alt="">
+                <h2>UNISEX GYM TRAINERS</h2>
+                <p>Our gym is unisex both male and female can join get our gym centre</p>
+
+            </div>
+            <div class="chooseeus-container-box1">
+                <img src="./images/PERFECT.png" alt="">
+                <h2>PERFECT GYM TRAINERS</h2>
+                <p>Our gym trainers teach you step by step in professional method</p>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="review">
+        <h2><span class="color">REVIEWS</span> AND FEEDBACK</h2>
+        <div class="reviewcontainer">
+            <h3>RV Fitness Center</h3>
+            <p>No:26/25, 2nd Floor, Agaram Main Rd., Ranganatha Nagar, Balaji Nagar, Selaiyur, Chennai, Tamil Nadu</p>
+            <div class="reviewsubcontainer">
+                <script src="https://static.elfsight.com/platform/platform.js" async></script>
+                <div class="elfsight-app-88819b4e-e25b-4869-8bc6-291ae3d43d05" data-elfsight-app-lazy></div>
+
+            </div>
+        </div>
+
     </section>
 
     <section id="bmi-calculator">
@@ -205,17 +245,17 @@
                 <div class="aboutbottom">
                     <span>ABOUT US</span>
                     <ul type="square">
-                        <li><a href="about.html">RV Fitness Club</a></li>
+                        <li><a href="about.ejs">RV Fitness Club</a></li>
                 </div>
                 <div class="terms">
                     <span>TERMS</span>
                     <ul type="square">
-                        <li><a href="#">Terms and condition</a></li>
+                        <li><a href="privacy.ejs">Terms and condition</a></li>
                 </div>
                 <div class="cotactbottom">
                     <span>CONTACT</span>
                     <ul type="square">
-                        <li><a href="#">+91 9330378959</a> </li>
+                        <li><a>+91 9330378959</a> </li>
                 </div>
             </div>
 
@@ -224,7 +264,6 @@
             <p><br><br>Copyrights © 2023 Rv Fitness Club. All rights reserved.
                 Rv Fitness Team is Powered by KingShuk❤️.</p>
         </div>
-        <script src="script.js"></script>
         <script src="index.js"></script>
     </footer>
 </body>

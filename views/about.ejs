@@ -24,7 +24,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
@@ -49,8 +48,14 @@
                 <a href="privacy.ejs">PRIVACY POLICY</a>
             </div>
             <div>
-                <button>Get Started</button>
-                <button class="button">CALL NOW</button>
+                <button id="getstarted">Get Started</button>
+                <button class="button" id="dial">CALL NOW</button>
+                <script>
+                    document.getElementById('dial').addEventListener('click', function () {
+                        window.location.href = "tel:+919330378959";
+                    })
+                </script>
+
             </div>
         </div>
     </header>
@@ -110,7 +115,7 @@
                 </div>
 
 
-                <a href="" class="about-btn">
+                <a href="contact.ejs" class="about-btn">
                     JOIN NOW
                 </a>
 
@@ -129,6 +134,80 @@
                         <img src="./images/about4.jpg" alt="">
                     </div>
 
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="services">
+            <div class="service-heading">
+                <h2 class="main-title">RV FITNESS <span class="color">SERVICES</span></h2>
+                <h3 class="description-title color margintd">Our Gym Features</h3>
+            </div>
+            <div class="allboxes">
+                <div class="box">
+                    <img src="./images/modern.png" alt="">
+                    <a href="">Modern Equipment</a>
+                </div>
+                <div class="box">
+                    <img src="./images/Cardio.png" alt="">
+                    <a href="">Cardio</a>
+                </div>
+                <div class="box">
+                    <img src="./images/hygienic.png" alt="">
+                    <a href="">Hygienic Space</a>
+                </div>
+                <div class="box">
+                    <img src="./images/yoga.png" alt="" class="inverted">
+                    <a href="">Yoga</a>
+                </div>
+                <div class="box">
+                    <img src="./images/Group.png" alt="">
+                    <a href="">Group Classes</a>
+                </div>
+                <div class="box">
+                    <img src="./images/Nutrition.png" alt="">
+                    <a href="">Nutrition</a>
+                </div>
+                <div class="box">
+                    <img src="./images/Targeted.png" alt="">
+                    <a href="">Targeted Programs</a>
+                </div>
+                <div class="box">
+                    <img src="./images/CrossFit.png" alt="">
+                    <a href="">CrossFit</a>
+                </div>
+                <div class="box">
+                    <img src="./images/Premium.png" alt="">
+                    <a href="">Premium Facilities</a>
+                </div>
+            </div>
+            <h3 class="subtitles color">BEST TRAINING</h3>
+
+            <div class="Service-provide">
+                <div class="imgcontainer">
+                    <img src="./images/image1.jpg" alt="">
+                    <p>GYM TRAINING</p>
+                </div>
+                <div class="imgcontainer">
+                    <img src="./images/about1.jpg" alt="">
+                    <p>WEIGHT LIFTING TRAININGS</p>
+                </div>
+                <div class="imgcontainer">
+                    <img src="./images/about2.jpg" alt="">
+                    <p>LADIES GYM TRAINERS</p>
+                </div>
+                <div class="imgcontainer">
+                    <img src="./images/image1.jpg" alt="">
+                    <p>PROFESSIONAL TRAINING</p>
+                </div>
+                <div class="imgcontainer">
+                    <img src="./images/about3.jpg" alt="">
+                    <p>WORKOUT</p>
+                </div>
+                <div class="imgcontainer">
+                    <img src="./images/about4.jpg" alt="">
+                    <p>SPECIFIC GYM TRAININGS</p>
                 </div>
             </div>
         </div>
@@ -153,12 +232,12 @@
                 <div class="aboutbottom">
                     <span>ABOUT US</span>
                     <ul type="square">
-                        <li><a href="about.html">RV Fitness Club</a></li>
+                        <li><a href="about.ejs">RV Fitness Club</a></li>
                 </div>
                 <div class="terms">
                     <span>TERMS</span>
                     <ul type="square">
-                        <li><a href="#">Terms and condition</a></li>
+                        <li><a href="privacy.ejs">Terms and condition</a></li>
                 </div>
                 <div class="cotactbottom">
                     <span>CONTACT</span>
@@ -172,9 +251,9 @@
             <p><br><br>Copyrights © 2023 Rv Fitness Club. All rights reserved.
                 Rv Fitness Team is Powered by KingShuk❤️.</p>
         </div>
-        <script src="script.js"></script>
         <script src="index.js"></script>
     </footer>
+
 </body>
 
 </html>

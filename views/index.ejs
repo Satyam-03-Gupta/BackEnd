@@ -47,14 +47,9 @@
                 <a href="privacy.ejs">PRIVACY POLICY</a>
             </div>
             <div>
-                <button>Get Started</button>
-                <button class="button">CALL NOW</button>
+                <button id="getstarted">Get Started</button>
+                <button class="button " id="dial">CALL NOW</button>
             </div>
-            <script>
-                var active = document.querySelector('. name active');
-                active.classList.add('activeNav');
-
-            </script>
         </div>
 
         <!-- <div class="navbaritems">
@@ -103,7 +98,7 @@
                                 .type("RV FITNESS CLUB")
                                 .pause(1000)
                                 .delete()
-                                .type("Strength Come With Constancy  ")
+                                .type("Unisex Gym with Top Hygiene")
                                 .pause(1000)
                                 .delete()
                                 .type("Fitness and workout  ")
@@ -115,9 +110,8 @@
                     </div>
 
                     <div class="btn-box">
-                        <a href="" class="btn-1">
-                            Read More
-                        </a>
+                        <button class="btn-1" id="readmore">Read More</button>
+
                         <a href="" class="btn-2">
                             JOIN MEMBERSHIP
                         </a>
@@ -146,8 +140,8 @@
         <div class="body-detail">
             <span>Access <span class="color">Premium Gyms & Fitness Centres</span> Near You</span>
         </div>
-        <div class="body-detail-more">With one membership, workout at 8,100+ fitness centres nationwide with 2,25,000+
-            workout sessions.</div>
+        <div class="body-detail-more">No:26/25, 2nd Floor, Agaram Main Rd., Ranganatha Nagar, Balaji Nagar, Selaiyur,
+            Chennai, Tamil Nadu.</div>
     </h1>
 
 
@@ -232,7 +226,7 @@
                 </div>
 
 
-                <a href="" class="about-btn">
+                <a href="contact.ejs" class="about-btn">
                     JOIN NOW
                 </a>
 
@@ -360,11 +354,16 @@
 
         </div>
     </section>
-    <section class="review red">
-        <h2>REVIEWS AND FEEDBACK</h2>
+    <section class="review">
+        <h2><span class="color">REVIEWS</span> AND FEEDBACK</h2>
         <div class="reviewcontainer">
             <h3>RV Fitness Center</h3>
-             <p>No:26/25, 2nd Floor, Agaram Main Rd., Ranganatha Nagar, Balaji Nagar, Selaiyur, Chennai, Tamil Nadu</p>
+            <p>No:26/25, 2nd Floor, Agaram Main Rd., Ranganatha Nagar, Balaji Nagar, Selaiyur, Chennai, Tamil Nadu</p>
+            <div class="reviewsubcontainer">
+                <script src="https://static.elfsight.com/platform/platform.js" async></script>
+                <div class="elfsight-app-88819b4e-e25b-4869-8bc6-291ae3d43d05" data-elfsight-app-lazy></div>
+
+            </div>
         </div>
 
     </section>
@@ -514,17 +513,17 @@
                 <div class="aboutbottom">
                     <span>ABOUT US</span>
                     <ul type="square">
-                        <li><a href="about.html">RV Fitness Club</a></li>
+                        <li><a href="about.ejs">RV Fitness Club</a></li>
                 </div>
                 <div class="terms">
                     <span>TERMS</span>
                     <ul type="square">
-                        <li><a href="#">Terms and condition</a></li>
+                        <li><a href="privacy.ejs">Terms and condition</a></li>
                 </div>
                 <div class="cotactbottom">
                     <span>CONTACT</span>
                     <ul type="square">
-                        <li><a href="#">+91 9330378959</a> </li>
+                        <li><a>+91 9330378959</a> </li>
                 </div>
             </div>
 
@@ -533,7 +532,6 @@
             <p><br><br>Copyrights © 2023 Rv Fitness Club. All rights reserved.
                 Rv Fitness Team is Powered by KingShuk❤️.</p>
         </div>
-        <script src="script.js"></script>
         <script src="index.js"></script>
     </footer>
 </body>
