@@ -509,7 +509,7 @@ button,
     position: relative;
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .contact-left {
@@ -844,6 +844,24 @@ iframe {
 
 
 @media screen and (max-width:1300px) {
+
+    p,
+    a {
+        font-size: 14px !important;
+    }
+
+    h1 {
+        font-size: 30px !important;
+    }
+
+    h2 {
+        font-size: 25px !important;
+    }
+
+    h3 {
+        font-size: 20px !important;
+    }
+
     .hambuger {
         display: block;
     }
@@ -896,10 +914,6 @@ iframe {
         transition: all 1s ease;
     }
 
-    .typewriter h2 {
-        font-size: 25px;
-    }
-
     #element {
         font-size: 32px;
     }
@@ -911,13 +925,29 @@ iframe {
         font-size: 15px;
     }
 
-    p,
-    a {
-        font-size: 14px;
-    }
+
 
     .about-btn {
-        max-width: 25%;
+        max-width: 40%;
     }
 
+    .contactbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagedesign {
+        display: none;
+    }
+
+    #bmi-calculator {
+        display: flex;
+        width: 100%;
+        min-height: 50vh;
+    }
+
+    .bmi-container {
+        height: 50vh;
+    }
 }
