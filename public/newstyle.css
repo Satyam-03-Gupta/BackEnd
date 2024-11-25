@@ -41,6 +41,7 @@ header {
     margin-top: 8px;
     text-shadow: 1px 1px 2px rgba(38, 34, 34, 0.382);
     color: #000;
+    z-index: 3;
 }
 
 .navicon {
@@ -98,7 +99,7 @@ button,
     color: #000;
 }
 
-.btn-1{
+.btn-1 {
     cursor: pointer;
 }
 
@@ -170,7 +171,7 @@ button,
 .description {
     text-shadow: 1px 1px 0 #000;
     font-weight: 500;
-    padding: 20px 0;
+    padding: 20px 30px 0 0;
 }
 
 .body-below {
@@ -607,11 +608,9 @@ iframe {
 
 /* General Styling */
 
-#bmi-calculator{
+#bmi-calculator {
     width: 100%;
     min-height: 75vh;
-    border: 2px solid greenyellow;
-
 }
 
 .bmi-container {
@@ -830,5 +829,95 @@ iframe {
     margin-left: auto;
     border: 1px solid lightgrey;
     background-color: ghostwhite;
+
+}
+
+.hambuger {
+    position: absolute;
+    top: 23px;
+    left: 35px;
+    color: #f04343;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px #000;
+    display: none;
+}
+
+
+@media screen and (max-width:1300px) {
+    .hambuger {
+        display: block;
+    }
+
+    .bars {
+        position: absolute;
+        z-index: 1;
+    }
+
+    .cross::before {
+        position: absolute;
+        z-index: 2;
+        top: 1px;
+        display: none;
+        transition: all 3s ease;
+        border: 3px solid #e32319;
+        padding: 7px 11px;
+        border-radius: 50px;
+    }
+
+    .cross.active::before {
+        display: block;
+    }
+
+    .nav-item a {
+        color: #fff;
+        font-size: 17px;
+    }
+
+
+    .nav-item {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: -10px;
+        left: -50%;
+        background-color: #27282c;
+        padding-top: 12%;
+        padding-left: 30px;
+        border-radius: 0 8px 8px 0;
+        z-index: 1;
+        width: 42%;
+        height: 100vh;
+        line-height: 2em;
+    }
+
+    .nav-item.active {
+        display: flex;
+        left: 0;
+        transition: all 1s ease;
+    }
+
+    .typewriter h2 {
+        font-size: 25px;
+    }
+
+    #element {
+        font-size: 32px;
+    }
+
+    button,
+    .btn-1,
+    .btn-2 {
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+
+    p,
+    a {
+        font-size: 14px;
+    }
+
+    .about-btn {
+        max-width: 25%;
+    }
 
 }
