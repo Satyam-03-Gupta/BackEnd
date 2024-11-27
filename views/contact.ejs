@@ -2,304 +2,308 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About US</title>
-    <link rel="stylesheet" href="newstyle.css">
-    <link rel="stylesheet" href="ultility.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <!-- Font Awesome CDN -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About US</title>
+  <link rel="stylesheet" href="newstyle.css">
+  <link rel="stylesheet" href="ultility.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
-    <script src="public/index.js"></script>
+  <script src="public/index.js"></script>
 </head>
 
 <body>
-    <style>
-        .body-part {
-            margin-top: 3rem;
-        }
-    </style>
+  <style>
+    .body-part {
+      margin-top: 3rem;
+    }
+  </style>
 
 
-    <header>
-        <div class="index margin1">
+  <header>
+    <div class="index margin1">
+      <span class="hambuger" onclick="toggleMenu();">
+        <i class='fa fa-bars bars'></i>
+        <i class='fa fa-times cross'></i>
+      </span>
 
-            <div class="navicon" onclick="window.location.href='#'">
-                <img class="icon" src="./images/logo.png" alt="reloading...">
-                <span class="sitename">RV <span class="s" style="color: #e32319;">FITNESS</span></span>
-            </div>
+      <div class="navicon" onclick="window.location.href='#'">
+        <img class="icon" src="./images/logo.png" alt="reloading...">
+        <span class="sitename">RV <span class="s" style="color: #e32319;">FITNESS</span></span>
+      </div>
 
-            <div class="nav-item">
-                <a href="/">HOME</a>
-                <a href="about.ejs">ABOUT US</a>
-                <a href="contact.ejs">CONTACT US</a>
-                <a href="privacy.ejs">PRIVACY POLICY</a>
-            </div>
-            <div>
-                <button class="button" id='dial'>CALL NOW</button>
-                <script>
-                    document.getElementById('dial').addEventListener('click', function () {
-                        window.location.href = "tel:+919330378959";
-                    })
-                </script>
-            </div>
-        </div>
-    </header>
-    <section id="contact">
-        <div class="background-cover" style="height: 110vh;">
-            <div id="contactus">
+      <div class="nav-item">
+        <a href="/">HOME</a>
+        <a href="about.ejs">ABOUT US</a>
+        <a href="contact.ejs">CONTACT US</a>
+        <a href="privacy.ejs">PRIVACY POLICY</a>
+      </div>
+      <div>
+        <button class="button" id='dial'>CALL NOW</button>
+        <script>
+          document.getElementById('dial').addEventListener('click', function () {
+            window.location.href = "tel:+919330378959";
+          })
+        </script>
+      </div>
+    </div>
+  </header>
+  <section id="contact">
+    <div class="background-cover-contact">
+        <div id="contactus">
 
-                <h2 class="main-title">Contact <span class="color">Us</span></h2>
-                <h1 class="welcome-title">Get in touch</h1>
-                <h3 class="description-title color">Ready to transform your fitness journey? Reach out to us today!</h3>
+            <h2 class="main-title">Contact <span class="color">Us</span></h2>
+            <h1 class="welcome-title">Get in touch</h1>
+            <h3 class="description-title color">Ready to transform your fitness journey? Reach out to us today!</h3>
 
-                <div class="contactbox">
-                    <form action="/" method="post" class="contact-left">
-                        <label for="Name">Your Name</label>
-                        <input type="text" placeholder="Enter your name!" name="username" required>
+            <div class="contactbox">
+                <form action="/" method="post" class="contact-left">
+                    <label for="Name">Your Name</label>
+                    <input type="text" placeholder="Enter your name!" name="username" required>
 
-                        <label for="email">Your Email</label>
-                        <input type="text" placeholder="Enter your email" name="email" required>
+                    <label for="email">Your Email</label>
+                    <input type="text" placeholder="Enter your email" name="email" required>
 
-                        <label for="phone">Your Phone</label>
-                        <input type="text" placeholder="Enter your phone number" name="phone" required>
+                    <label for="phone">Your Phone</label>
+                    <input type="text" placeholder="Enter your phone number" name="phone" required>
 
-                        <label for="phone">Message,Feedback</label>
-                        <textarea name="message" id="message" class='margintd'
-                            placeholder="Share your feedback or query here..." rows="7"></textarea>
+                    <label for="phone">Message,Feedback</label>
+                    <textarea name="message" id="message" class='margintd'
+                        placeholder="Share your feedback or query here..." rows="7"></textarea>
 
-                        <button>Summit</button>
-                    </form>
+                    <button>Summit</button>
+                </form>
 
 
-                    <div class="contact-right">
-                        <div class="map_container">
-                            <div class="map-responsive">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15555.84618313611!2d80.1432151!3d12.9101931!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525ed89cab54bd%3A0xb68adbc49b1ef1ef!2sRV%20Fitness%20Club!5e0!3m2!1sen!2sin!4v1709699577068!5m2!1sen!2sin"
-                                    width="600" height="340" style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
+                <div class="contact-right">
+                    <div class="map_container">
+                        <div class="map-responsive">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15555.84618313611!2d80.1432151!3d12.9101931!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525ed89cab54bd%3A0xb68adbc49b1ef1ef!2sRV%20Fitness%20Club!5e0!3m2!1sen!2sin!4v1709699577068!5m2!1sen!2sin"
+                                width="600" height="340" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <div class="contact-right-details">
-                            <span class="right-details">
-                                <i class='fas fa-phone'></i>
-                                <h3 class="color">Contact Details</h3>
-                            </span>
-                            <div class="right-container-phone">
-                                <div class="address1">
-                                    <span>
-                                        <i class="fas fa-mobile-alt">&nbsp;&nbsp;</i>
-                                        <a href="">+91 99628 86575</a>
-                                    </span><br>
-                                    <span>
-                                        <i class="fas fa-envelope">&nbsp;&nbsp;</i>
-                                        <a href="">rvfitnessselaiyur@gmail.com</a>
-                                    </span>
-                                </div>
-                                <div class="address2">
-                                    <p><i class="fas fa-map-marker-alt">&nbsp;</i> RV Fitness : No:26/25, 2nd Floor,
-                                        Agaram Main Rd., Ranganatha Nagar, Balaji Nagar, Selaiyur, Chennai, Tamil Nadu
-                                        600073.</p>
-                                </div>
+                    </div>
+                    <div class="contact-right-details">
+                        <span class="right-details">
+                            <i class='fas fa-phone'></i>
+                            <h3 class="color">Contact Details</h3>
+                        </span>
+                        <div class="right-container-phone">
+                            <div class="address1">
+                                <span>
+                                    <i class="fas fa-mobile-alt">&nbsp;&nbsp;</i>
+                                    <a href="">+91 99628 86575</a>
+                                </span><br>
+                                <span>
+                                    <i class="fas fa-envelope">&nbsp;&nbsp;</i>
+                                    <a href="">rvfitnessselaiyur@gmail.com</a>
+                                </span>
+                            </div>
+                            <div class="address2">
+                                <p><i class="fas fa-map-marker-alt">&nbsp;</i> RV Fitness : No:26/25, 2nd Floor,
+                                    Agaram Main Rd., Ranganatha Nagar, Balaji Nagar, Selaiyur, Chennai, Tamil Nadu
+                                    600073.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-
-            </div>
-        </div>
-    </section>
-    <section class="chooseus">
-        <h1>Why RV Fitness?</h1>
-        <div class="chooseeus-container ">
-            <div class="chooseeus-container-box1">
-                <img src="./images/QUALITY.png" alt="">
-                <h2>QUALITY EQUIPMENT</h2>
-                <p>We have quality equipments with professional gym trainers</p>
-            </div>
-            <div class="chooseeus-container-box1">
-                <img src="./images/NUTRITIONs.png" alt="">
-                <h2>NUTRITION PLAN</h2>
-                <p>We train based on body performance and scheduled timings</p>
-            </div>
-            <div class="chooseeus-container-box1">
-                <img src="./images/UNISEXss.png" alt="">
-                <h2>UNISEX GYM TRAINERS</h2>
-                <p>Our gym is unisex both male and female can join get our gym centre</p>
-
-            </div>
-            <div class="chooseeus-container-box1">
-                <img src="./images/PERFECT.png" alt="">
-                <h2>PERFECT GYM TRAINERS</h2>
-                <p>Our gym trainers teach you step by step in professional method</p>
-
             </div>
 
         </div>
-    </section>
-    <section class="review">
-        <h2><span class="color">REVIEWS</span> AND FEEDBACK</h2>
-        <div class="reviewcontainer">
-            <h3>RV Fitness Center</h3>
-            <p>No:26/25, 2nd Floor, Agaram Main Rd., Ranganatha Nagar, Balaji Nagar, Selaiyur, Chennai, Tamil Nadu</p>
-            <div class="reviewsubcontainer">
-                <script src="https://static.elfsight.com/platform/platform.js" async></script>
-                <div class="elfsight-app-88819b4e-e25b-4869-8bc6-291ae3d43d05" data-elfsight-app-lazy></div>
+    </div>
+</section>
+  <section class="chooseus">
+    <h1>Why RV Fitness?</h1>
+    <div class="chooseeus-container ">
+      <div class="chooseeus-container-box1">
+        <img src="./images/QUALITY.png" alt="">
+        <h2>QUALITY EQUIPMENT</h2>
+        <p>We have quality equipments with professional gym trainers</p>
+      </div>
+      <div class="chooseeus-container-box1">
+        <img src="./images/NUTRITIONs.png" alt="">
+        <h2>NUTRITION PLAN</h2>
+        <p>We train based on body performance and scheduled timings</p>
+      </div>
+      <div class="chooseeus-container-box1">
+        <img src="./images/UNISEXss.png" alt="">
+        <h2>UNISEX GYM TRAINERS</h2>
+        <p>Our gym is unisex both male and female can join get our gym centre</p>
 
-            </div>
+      </div>
+      <div class="chooseeus-container-box1">
+        <img src="./images/PERFECT.png" alt="">
+        <h2>PERFECT GYM TRAINERS</h2>
+        <p>Our gym trainers teach you step by step in professional method</p>
+
+      </div>
+
+    </div>
+  </section>
+  <section class="review">
+    <h2><span class="color">REVIEWS</span> AND FEEDBACK</h2>
+    <div class="reviewcontainer">
+      <h3>RV Fitness Center</h3>
+      <p>No:26/25, 2nd Floor, Agaram Main Rd., Ranganatha Nagar, Balaji Nagar, Selaiyur, Chennai, Tamil Nadu</p>
+      <div class="reviewsubcontainer">
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-88819b4e-e25b-4869-8bc6-291ae3d43d05" data-elfsight-app-lazy></div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section id="bmi-calculator">
+    <div class="bmi-container">
+      <div class="bmi-left-details">
+        <img src="./images/logo.png" alt="Logo">
+        <h1>RV <span class="color">&nbsp; FITNESS &nbsp;</span>CLUB</h1>
+
+        <div class="imagedesign">
+          <img src="./images/bmi.png" alt="">
         </div>
-
-    </section>
-
-    <section id="bmi-calculator">
-        <div class="bmi-container">
-          <div class="bmi-left-details">
-            <img src="./images/logo.png" alt="Logo">
-            <h1>RV <span class="color">&nbsp; FITNESS &nbsp;</span>CLUB</h1>
-      
-            <div class="imagedesign">
-              <img src="./images/bmi.png" alt="">
+      </div>
+      <div class="bmi-main-container">
+        <div class="bmibox">
+          <h1>BMI <span class="color">Calculator</span></h1>
+          <div class="content">
+            <div class="input">
+              <label for="age">Age</label>
+              <input type="text" class="text-input" id="age" autocomplete="off" required>
             </div>
-          </div>
-          <div class="bmi-main-container">
-            <div class="bmibox">
-              <h1>BMI <span class="color">Calculator</span></h1>
-              <div class="content">
-                <div class="input">
-                  <label for="age">Age</label>
-                  <input type="text" class="text-input" id="age" autocomplete="off" required>
-                </div>
-                <div class="gender">
-                  <label class="container">
-                    <input type="radio" name="gender" id="male">
-                    <p class="text">Male</p>
-                  </label>
-                  <label class="container">
-                    <input type="radio" name="gender" id="female">
-                    <p class="text">Female</p>
-                  </label>
-                </div>
-                <div class="containerHW">
-                  <div class="inputH">
-                    <label for="height">Height (cm)</label>
-                    <input type="number" id="height" required>
-                  </div>
-                  <div class="inputW">
-                    <label for="weight">Weight (kg)</label>
-                    <input type="number" id="weight" required>
-                  </div>
-                </div>
-                <button class="calculate" id="submit" onclick="calculate();">Calculate BMI</button>
+            <div class="gender">
+              <label class="container">
+                <input type="radio" name="gender" id="male">
+                <p class="text">Male</p>
+              </label>
+              <label class="container">
+                <input type="radio" name="gender" id="female">
+                <p class="text">Female</p>
+              </label>
+            </div>
+            <div class="containerHW">
+              <div class="inputH">
+                <label for="height">Height (cm)</label>
+                <input type="number" id="height" required>
               </div>
-              <div class="result">
-                <p>Your BMI is</p>
-                <div id="result">00.00</div>
-                <p class="comment"></p>
+              <div class="inputW">
+                <label for="weight">Weight (kg)</label>
+                <input type="number" id="weight" required>
               </div>
             </div>
+            <button class="calculate" id="submit" onclick="calculate();">Calculate BMI</button>
+          </div>
+          <div class="result">
+            <p>Your BMI is</p>
+            <div id="result">00.00</div>
+            <p class="comment"></p>
           </div>
         </div>
-        <script>
-          function calculate() {
-            const age = document.querySelector("#age");
-            const height = document.querySelector("#height");
-            const weight = document.querySelector("#weight");
-            const male = document.querySelector("#male");
-            const female = document.querySelector("#female");
-            const resultArea = document.querySelector(".result");
-      
-            if (
-              age.value === "" ||
-              height.value === "" ||
-              weight.value === "" ||
-              (!male.checked && !female.checked)
-            ) {
-              alert("All fields are required!");
-            } else {
-              countBmi(age, height, weight, male, female, resultArea);
-            }
-          }
-      
-          function countBmi(age, height, weight, male, female, resultArea) {
-            const bmi = parseFloat(weight.value) / ((parseFloat(height.value) / 100) ** 2);
-            let result = "";
-            if (bmi < 18.5) {
-              result = "Underweight";
-            } else if (bmi >= 18.5 && bmi <= 24.9) {
-              result = "Healthy";
-            } else if (bmi >= 25 && bmi <= 29.9) {
-              result = "Overweight";
-            } else if (bmi >= 30 && bmi <= 34.9) {
-              result = "Obese";
-            } else if (bmi >= 35) {
-              result = "Extremely obese";
-            }
-      
-            resultArea.style.display = "block";
-            document.querySelector(".comment").innerHTML = `You are <span id="comment">${result}</span>`;
-            document.querySelector("#result").innerHTML = bmi.toFixed(2);
-          }
-        </script>
-      </section>
-      
+      </div>
+    </div>
+    <script>
+      function calculate() {
+        const age = document.querySelector("#age");
+        const height = document.querySelector("#height");
+        const weight = document.querySelector("#weight");
+        const male = document.querySelector("#male");
+        const female = document.querySelector("#female");
+        const resultArea = document.querySelector(".result");
 
-    <footer>
-        <div class="underfooter">
-            <div class="bNavicon">
-                <div class="bNcontainer">
+        if (
+          age.value === "" ||
+          height.value === "" ||
+          weight.value === "" ||
+          (!male.checked && !female.checked)
+        ) {
+          alert("All fields are required!");
+        } else {
+          countBmi(age, height, weight, male, female, resultArea);
+        }
+      }
 
-                    <img class="icon" src="./images/logo.png" alt="reloading...">
-                    <h2 class="main-title">RV <span class="color">FITNESS</span></h2>
-                </div><br>
+      function countBmi(age, height, weight, male, female, resultArea) {
+        const bmi = parseFloat(weight.value) / ((parseFloat(height.value) / 100) ** 2);
+        let result = "";
+        if (bmi < 18.5) {
+          result = "Underweight";
+        } else if (bmi >= 18.5 && bmi <= 24.9) {
+          result = "Healthy";
+        } else if (bmi >= 25 && bmi <= 29.9) {
+          result = "Overweight";
+        } else if (bmi >= 30 && bmi <= 34.9) {
+          result = "Obese";
+        } else if (bmi >= 35) {
+          result = "Extremely obese";
+        }
+
+        resultArea.style.display = "block";
+        document.querySelector(".comment").innerHTML = `You are <span id="comment">${result}</span>`;
+        document.querySelector("#result").innerHTML = bmi.toFixed(2);
+      }
+    </script>
+  </section>
 
 
-                <p><span>Stay fit with TimetoSweat! Our website offers a comprehensive gym workout schedule to help you
-                        achieve your fitness goals. Whether you're looking to lose weight, build muscle, or simply stay
-                        in shape, we've got you covered. Get ready to sweat and transform your body. Start your fitness
-                        journey today!</span> </p>
-            </div>
+  <footer>
+    <div class="underfooter">
+      <div class="bNavicon">
+        <div class="bNcontainer">
 
-            <div class="bottonNav">
-                <div class="aboutbottom">
-                    <span>ABOUT US</span>
-                    <ul type="square">
-                        <li><a href="about.ejs">RV Fitness Club</a></li>
-                </div>
-                <div class="terms">
-                    <span>TERMS</span>
-                    <ul type="square">
-                        <li><a href="privacy.ejs">Terms and condition</a></li>
-                </div>
-                <div class="cotactbottom">
-                    <span>CONTACT</span>
-                    <ul type="square">
-                        <li><a>+91 9330378959</a> </li>
-                </div>
-            </div>
+          <img class="icon" src="./images/logo.png" alt="reloading...">
+          <h2 class="main-title">RV <span class="color">FITNESS</span></h2>
+        </div><br>
 
+
+        <p><span>Stay fit with TimetoSweat! Our website offers a comprehensive gym workout schedule to help you
+            achieve your fitness goals. Whether you're looking to lose weight, build muscle, or simply stay
+            in shape, we've got you covered. Get ready to sweat and transform your body. Start your fitness
+            journey today!</span> </p>
+      </div>
+
+      <div class="bottonNav">
+        <div class="aboutbottom">
+          <span>ABOUT US</span>
+          <ul type="square">
+            <li><a href="about.ejs">RV Fitness Club</a></li>
         </div>
-        <div class="copyrightfooter">
-            <p><br><br>Copyrights © 2023 Rv Fitness Club. All rights reserved.
-                Rv Fitness Team is Powered by KingShuk❤️.</p>
+        <div class="terms">
+          <span>TERMS</span>
+          <ul type="square">
+            <li><a href="privacy.ejs">Terms and condition</a></li>
         </div>
-        <script src="index.js"></script>
-    </footer>
+        <div class="cotactbottom">
+          <span>CONTACT</span>
+          <ul type="square">
+            <li><a>+91 9330378959</a> </li>
+        </div>
+      </div>
+
+    </div>
+    <div class="copyrightfooter">
+      <p><br><br>Copyrights © 2023 Rv Fitness Club. All rights reserved.
+        Rv Fitness Team is Powered by KingShuk❤️.</p>
+    </div>
+    <script src="index.js"></script>
+  </footer>
 </body>
 
 </html>

@@ -133,7 +133,7 @@ button,
     z-index: 0;
     background: rgb(0, 0, 0);
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.6195728291316527) 0%, rgba(0, 0, 0, 0.375875350140056) 61%, rgba(0, 0, 0, 0.571953781512605) 87%, rgba(0, 0, 0, 1) 100%);
-    gap: 7rem;
+    gap: 6rem;
     overflow: hidden;
     align-items: center;
 }
@@ -320,7 +320,7 @@ button,
 
 .box {
     position: relative;
-    width: 27%;
+    width: 300px;
     border: 2px solid;
     border-radius: 6px;
     display: flex;
@@ -481,7 +481,6 @@ button,
     background-size: cover;
     color: #fff;
     text-shadow: 1px 1px 2px rgba(38, 34, 34, 0.382);
-    overflow: scroll;
 }
 
 .background-cover-contact {
@@ -513,34 +512,12 @@ button,
     gap: 1rem;
 }
 
-#contact::-webkit-scrollbar{
-    width: 8px;
-}
-
-#contact::-webkit-scrollbar-track{
-    background: #f0f0f0;
-    border-radius: 4px;
-}
-
-#contact::-webkit-scrollbar-thumb{
-    background: #ccc;
-    border-radius: 4px;
-}
-
-#contact::-webkit-scrollbar-thumb:hover{
-    background: #b3b3b3;
-}
-
-
-
-
-
 
 .contact-left {
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 45%;
+    width: 45%;
 }
 
 .contact-left form {
@@ -895,6 +872,10 @@ iframe {
         z-index: 1;
     }
 
+    .body-detail-more {
+        font-size: 12px !important;
+    }
+
     .cross::before {
         position: absolute;
         z-index: 2;
@@ -959,6 +940,7 @@ iframe {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .imagedesign {
@@ -969,9 +951,19 @@ iframe {
         display: flex;
         width: 100%;
         min-height: 50vh;
+        justify-content: center;
+        align-items: center;
     }
 
-    .bmi-container {
-        height: 50vh;
+    .contact-left {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
     }
+
+    /* .contact-right {
+        display: none;
+        overflow: visible;
+    } */
 }
