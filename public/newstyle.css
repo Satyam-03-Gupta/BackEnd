@@ -475,6 +475,7 @@ button,
     position: relative;
     display: flex;
     justify-content: space-between;
+    flex-wrap: nowrap;
     min-height: 110vh;
     width: 100%;
     background: url(./images/contact.jpg) no-repeat center center;
@@ -498,18 +499,20 @@ button,
 
 #contactus {
     display: flex;
-    width: 100%;
-    height: auto;
+    width: 90%;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 1;
+    margin: auto;
 }
 
 .contactbox {
     position: relative;
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 
@@ -517,11 +520,7 @@ button,
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 45%;
-}
-
-.contact-left form {
-    display: flex;
+    max-width: 50%;
 }
 
 .contact-left label {
@@ -531,20 +530,13 @@ button,
     font-family: "Oswald", sans-serif;
 }
 
-.contact-left input {
+.contact-left input,
+.contact-left textarea {
     width: 30rem;
     padding: 1rem;
     margin: 10px 0px;
     background: transparent;
     color: #fff;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-
-.contact-left textarea {
-    background: transparent;
-    color: #ffff;
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
@@ -568,7 +560,6 @@ iframe {
 
 .contact-right {
     position: relative;
-    max-width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -936,34 +927,29 @@ iframe {
         max-width: 40%;
     }
 
+    /* ---------contact------ */
+
+    #contact {
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 150vh;
+    }
+
+
     .contactbox {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .imagedesign {
-        display: none;
-    }
-
-    #bmi-calculator {
-        display: flex;
-        width: 100%;
-        min-height: 50vh;
         justify-content: center;
         align-items: center;
+        overflow: scroll;
+        padding-bottom: 13px;
     }
 
-    .contact-left {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        width: 50%;
+    .contact-left,
+    .contact-right {
+        width: 100%;
     }
 
-    /* .contact-right {
-        display: none;
-        overflow: visible;
-    } */
+   
+
 }
