@@ -471,17 +471,26 @@ button,
 }
 
 /*------------ CONTACT US----------------------------------------------------- */
-#contact {
+
+#contact-section {
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    min-height: 110vh;
     width: 100%;
+    height: 110vh;
+    overflow: hidden;
+}
+
+#contact {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 110vh;
+    width: 100vw;
     background: url(./images/contact.jpg) no-repeat center center;
     background-size: cover;
     color: #fff;
     text-shadow: 1px 1px 2px rgba(38, 34, 34, 0.382);
+    z-index: 0;
 }
 
 .background-cover-contact {
@@ -497,15 +506,14 @@ button,
     align-items: center;
 }
 
-#contactus {
+.contactus {
     display: flex;
-    width: 90%;
-    height: 100%;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     z-index: 1;
     margin: auto;
+    max-width: 90%;
+    height: 100vh;
 }
 
 .contactbox {
@@ -513,26 +521,52 @@ button,
     display: flex;
     justify-content: center;
     gap: 2rem;
+    width: 100%;
+    height: 100%;
 }
-
 
 .contact-left {
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 50%;
+    width: 100%;
+}
+
+.form-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
 
 .contact-left label {
+    display: flex;
+    flex-direction: column;
     font-size: 22px;
     font-weight: 500;
     color: #f04343;
     font-family: "Oswald", sans-serif;
+    flex-wrap: nowrap;
+}
+
+#summit {
+    font-size: 1rem;
+    line-height: 2;
+    padding: 8px 20px;
+    border-radius: 7px;
+    background-color: rgb(17, 81, 191);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    font-family: "Poppins", serif;
+    text-decoration: none;
+    cursor: pointer;
+    max-width: 35%;
 }
 
 .contact-left input,
 .contact-left textarea {
-    width: 30rem;
+    width: 80%;
     padding: 1rem;
     margin: 10px 0px;
     background: transparent;
@@ -602,7 +636,7 @@ iframe {
 
 #bmi-calculator {
     width: 100%;
-    min-height: 75vh;
+    min-height: 82vh;
 }
 
 .bmi-container {
@@ -635,11 +669,13 @@ iframe {
     text-shadow: 5px 5px 3px rgba(38, 34, 34, 0.382);
 }
 
-.imagedesign {
+.imagedesign,
+.imagedesign2 {
     max-width: 75%;
 }
 
-.imagedesign img {
+.imagedesign img,
+.imagedesign2 img {
     position: relative;
     transform: scaleX(-1);
     width: 100%;
@@ -655,6 +691,7 @@ iframe {
     align-items: center;
     width: 100%;
     z-index: 1;
+    margin-top: 2rem;
 }
 
 .bmibox {
@@ -771,12 +808,15 @@ iframe {
     display: flex;
     flex-direction: column;
     color: #fff;
+    max-width: 45%;
+    padding: 0px 50px;
 }
 
 .bNcontainer {
     display: flex;
     align-items: center;
     margin-top: 70px;
+    width: 100%;
 }
 
 .bNcontainer img {
@@ -785,11 +825,6 @@ iframe {
 
 .bNcontainer h2 {
     margin-top: 20px;
-}
-
-.bNavicon {
-    max-width: 45%;
-    padding: 0px 50px;
 }
 
 .bottonNav {
@@ -831,6 +866,10 @@ iframe {
     color: #f04343;
     font-size: 30px;
     text-shadow: 1px 1px 1px #000;
+    display: none;
+}
+
+.imagedesign2 {
     display: none;
 }
 
@@ -928,13 +967,15 @@ iframe {
     }
 
     /* ---------contact------ */
-
-    #contact {
-        flex-direction: column;
-        justify-content: flex-start;
-        min-height: 150vh;
+    #contact-section,
+    #contact,
+    .background-cover-contact {
+        height: 170vh
     }
 
+    .contactus {
+        height: 170vh;
+    }
 
     .contactbox {
         display: flex;
@@ -942,14 +983,54 @@ iframe {
         justify-content: center;
         align-items: center;
         overflow: scroll;
-        padding-bottom: 13px;
     }
 
-    .contact-left,
-    .contact-right {
-        width: 100%;
+    .form-left {
+        display: flex;
+        align-content: center;
     }
 
-   
+    .imagedesign {
+        display: none;
+    }
 
+    .containerHW {
+        display: flex;
+        justify-content: flex-start;
+        gap: 3rem;
+    }
+
+    .footercontainer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .imagedesign2 {
+        display: block;
+        filter: invert(1);
+    }
+
+    .bNavicon{
+        max-width: 100%;
+    }
+    .footercontainer p{
+        max-width: 45%;
+    }
+
+    .imagedesign2 img{
+        position: relative;
+        width: 45%;
+        top: 0;
+        left: 35%;
+    }
+
+    .heading-contact{
+        margin-top: 10px;
+    }
+
+
+}
+
+@media screen and (max-width:800px) {
+    
 }
