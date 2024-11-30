@@ -882,28 +882,43 @@ iframe {
     position: relative;
     display: flex;
     flex-direction: column;
-    background:url(images/thankyou-background.png) no-repeat center;
+    background: url(images/thankyou-background.png) no-repeat center;
     width: 100%;
     height: 90vh;
 }
 
+.thankyou-container .background-cover {
+    height: 90vh;
+}
+
 .thankyou-details {
-    max-width: 45%;
+    max-width: 85%;
     margin: auto;
     text-align: center;
     color: #fff;
     text-shadow: 2px 2px 2px #000;
+    letter-spacing: 1.2px;
 }
 
-.thankyou-details h2{
+.thankyou-details h2 {
     padding: 12px 24px;
     font-size: 32px;
     font-weight: 700;
 }
 
-.thankyou-details img{
+.thankyou-details img {
     width: 40%;
+    filter: invert(1);
 }
+
+.thankyou-details h1 {
+    font-size: 45px !important;
+    text-transform: capitalize;
+}
+
+
+
+
 
 @media screen and (max-width:1300px) {
 
