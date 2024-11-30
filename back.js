@@ -39,7 +39,7 @@ app.post('/', async (req, res) => {
         message: message
 
     })
-    res.send('sucessful')
+    res.render('thankyou')
 })
 
 app.get('/get-users', (req, res) => {
