@@ -24,15 +24,19 @@ header {
     flex-direction: column;
     top: 0;
     width: 100%;
+    z-index: 100;
 }
 
 .index {
+    position: fixed;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
     background-color: white;
-    height: 40px;
+    height: 64px;
+    width: 100%;
+    box-shadow: 1px 1px 7px #000;
 }
 
 .sitename {
@@ -942,13 +946,6 @@ iframe {
 
 @media screen and (max-width:1300px) {
 
-    /* .body{
-        height: 50vh;
-        align-items: center;
-        justify-content: center;
-        
-    } */
-    
     p,
     a {
         font-size: 14px !important;
@@ -974,7 +971,7 @@ iframe {
         height: 40px;
     }
 
-    .hamburger-footer{
+    .hamburger-footer {
         margin-top: auto;
     }
 
@@ -1274,7 +1271,7 @@ iframe {
         width: 100%;
     }
 
-    .hambuger-span{
+    .hambuger-span {
         font-size: 8px !important;
     }
 
