@@ -37,15 +37,17 @@
             <span class="hambuger" onclick="toggleMenu();">
                 <i class='fa fa-bars bars'></i>
                 <i class='fa fa-times cross'></i>
+
             </span>
 
-            <div class="navicon" onclick="window.location.href='#'">
+            <div class="navicon" onclick="window.location.href='/'">
                 <img class="icon" src="./images/logo.png" alt="reloading...">
                 <span class="sitename">RV <span class="s" style="color: #e32319;">FITNESS</span></span>
             </div>
 
             <div class="nav-item">
-                <a href="#"><span class="hamburger-nav"><i class='fa fa-home'></i></span>HOME</a>
+                <span class="menu">MENU</span>
+                <a href="/"><span class="hamburger-nav"><i class='fa fa-home'></i></span>HOME</a>
                 <a href="about.ejs"><span class="hamburger-nav"><i class='fas fa-user-friends'></i></span>ABOUT US</a>
                 <a href="contact.ejs"><span class="hamburger-nav"><i class='fas fa-phone-volume'></i></span>CONTACT
                     US</a>
@@ -58,7 +60,8 @@
                         <h2 class="main-title">RV <span class="color">FITNESS</span></h2>
                     </div><br>
                     <div class="hamburger-footer-details">
-                        <p><span class="hambuger-span">Stay fit with RV Fitness! Explore personalized gym schedules to help you lose
+                        <p><span class="hambuger-span">Stay fit with RV Fitness! Explore personalized gym schedules to
+                                help you lose
                                 weight, build muscle, or stay in shape. Achieve your fitness goals and transform
                                 your body. Start your journey today! </span> </p>
                     </div>
@@ -429,13 +432,10 @@
                 <div class="bmibox">
                     <h1>BMI <span class="color">Calculator</span></h1>
                     <div class="content">
-                        <!-- Age Input -->
                         <div class="input">
                             <label for="age">Age</label>
                             <input type="text" class="text-input" id="age" autocomplete="off" required>
                         </div>
-
-                        <!-- Gender Selection -->
                         <div class="gender">
                             <label class="container">
                                 <input type="radio" name="gender" id="m">
@@ -446,8 +446,6 @@
                                 <p class="text">Female</p>
                             </label>
                         </div>
-
-                        <!-- Height and Weight Input -->
                         <div class="containerHW">
                             <div class="inputH">
                                 <label for="height">Height (cm)</label>
@@ -458,12 +456,8 @@
                                 <input type="number" id="weight" required>
                             </div>
                         </div>
-
-                        <!-- Calculate Button -->
                         <button class="calculate" id="submit" onclick="calculate();">Calculate BMI</button>
                     </div>
-
-                    <!-- Result Display -->
                     <div class="result">
                         <p>Your BMI is</p>
                         <div id="result">00.00</div>
