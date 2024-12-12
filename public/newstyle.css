@@ -247,6 +247,7 @@ button,
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.2px;
+    text-shadow: 1px 1px 1px #fff;
 }
 
 .welcome-title {
@@ -1011,6 +1012,7 @@ iframe {
         color: #fff;
         font-size: 12px !important;
         gap: 1rem;
+        text-shadow: 3px 3px 1px #000;
     }
 
     .nav-item {
@@ -1263,6 +1265,10 @@ iframe {
         display: none;
     }
 
+    .nav-item a {
+        font-size: 10px !important;
+    }
+
     .menu {
         display: block;
         position: absolute;
@@ -1291,8 +1297,8 @@ iframe {
     }
 
     .hambuger {
-        top: 25px;
-        left: 27px;
+        top: 20px;
+        left: 10px;
         font-size: 27px;
     }
 
@@ -1397,6 +1403,8 @@ iframe {
     .result #result {
         font-size: 28px;
     }
+}
 
-
+@media screen and (max-width:450px) {
+    
 }

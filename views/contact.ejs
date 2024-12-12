@@ -30,9 +30,13 @@
 
 <body>
   <style>
-    .contact-section {
-      margin-top: 6rem;
+    @media screen and (max-width: 500px) {
+      .contact-section {
+        margin-top: 4rem;
+      }
     }
+
+    ;
   </style>
 
 
@@ -49,6 +53,7 @@
       </div>
 
       <div class="nav-item">
+        <span class="menu">MENU</span>
         <a href="/"><span class="hamburger-nav"><i class='fa fa-home'></i></span>HOME</a>
         <a href="about.ejs"><span class="hamburger-nav"><i class='fas fa-user-friends'></i></span>ABOUT US</a>
         <a href="contact.ejs"><span class="hamburger-nav"><i class='fas fa-phone-volume'></i></span>CONTACT
@@ -81,7 +86,7 @@
       </div>
     </div>
   </header>
-  <section id="contact-section">
+  <section id="contact-section" style="margin-top: 60px;">
     <div id="contact">
       <div class="background-cover-contact">
         <div class="contactus ">
@@ -117,7 +122,7 @@
                 <div class="map-responsive">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15555.84618313611!2d80.1432151!3d12.9101931!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525ed89cab54bd%3A0xb68adbc49b1ef1ef!2sRV%20Fitness%20Club!5e0!3m2!1sen!2sin!4v1709699577068!5m2!1sen!2sin"
-                    width="600" height="340" style="border:0;" allowfullscreen="" loading="lazy"
+                    style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
               </div>
