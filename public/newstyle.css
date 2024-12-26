@@ -117,12 +117,22 @@ button,
 
 .button :hover {
     font-size: 1.2em;
+    transform: scale(1.1);
+}
+
+#dial:hover {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 7px;
+    background-color: #55555514;
+
 }
 
 .body {
     position: relative;
     width: 100%;
-    height: 75vh;
+    min-height: 75vh;
     overflow: hidden;
     color: #fff;
 }
@@ -499,7 +509,7 @@ button,
     position: relative;
     width: 100%;
     height: 110vh;
-    overflow: hidden;
+    overflow: visible;
 }
 
 #contact {
@@ -507,7 +517,7 @@ button,
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 110vh;
+    height: 110vh;
     width: 100vw;
     background: url(./images/contact.jpg) no-repeat center center;
     background-size: cover;
@@ -519,13 +529,12 @@ button,
 .background-cover-contact {
     position: absolute;
     width: 100%;
-    min-height: 110vh;
+    height: 110vh;
     z-index: 0;
     background: rgb(0, 0, 0);
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.6195728291316527) 0%, rgba(0, 0, 0, 0.375875350140056) 61%, rgba(0, 0, 0, 0.571953781512605) 87%, rgba(0, 0, 0, 1) 100%);
-    justify-content: space-evenly;
     overflow: hidden;
-    align-items: center;
+    padding-top: 10px;
 }
 
 .contactus {
@@ -1055,7 +1064,7 @@ iframe {
     #contact-section,
     #contact,
     .background-cover-contact {
-        min-height: 175vh;
+        min-height: 80rem;
     }
 
     .contactbox {
@@ -1063,7 +1072,7 @@ iframe {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        overflow: scroll;
+
     }
 
     .form-left {
@@ -1119,7 +1128,7 @@ iframe {
     }
 
     .body-detail-more {
-        font-size: 7px !important;
+        font-size: 11px !important;
     }
 
     #getstarted,
@@ -1152,6 +1161,12 @@ iframe {
     .background-cover {
         display: flex;
         justify-content: center;
+    }
+
+    #contact-section,
+    #contact,
+    .background-cover-contact {
+        min-height: 72rem;
     }
 
     .containerHW {
@@ -1288,7 +1303,7 @@ iframe {
     #contact-section,
     #contact,
     .background-cover-contact {
-        height: 170vh;
+        min-height: 72rem;
     }
 
     .footercontainer p {
@@ -1405,5 +1420,12 @@ iframe {
 }
 
 @media screen and (max-width:450px) {
-    
+    .body {
+        min-height: 65vh;
+    }
+
+    .right-container-phone p,
+    a {
+        font-size: 8px !important;
+    }
 }

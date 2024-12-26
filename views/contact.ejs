@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About US</title>
+  <title>Contact Us</title>
   <link rel="stylesheet" href="newstyle.css">
   <link rel="stylesheet" href="ultility.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -83,6 +83,11 @@
       <div>
         <!-- <button id="getstarted">Get Started</button> -->
         <button class="button " id="dial">CALL NOW</button>
+        <script>
+          document.getElementById('dial').addEventListener('click', function () {
+            window.location.href = "tel:+919330378959";
+          })
+        </script>
       </div>
     </div>
   </header>
@@ -112,7 +117,7 @@
                 <textarea name="message" id="message" class='margintd'
                   placeholder="Share your feedback or query here..." rows="7"></textarea>
 
-                <button id="summit">Summit</button>
+                <button id="summit">Submit</button>
               </form>
             </div>
 
