@@ -403,6 +403,7 @@ button,
     position: relative;
     max-width: 40%;
     min-height: 32%;
+    cursor: pointer;
 }
 
 .imgcontainer img {
@@ -1391,7 +1392,7 @@ iframe {
         padding: 1rem;
     }
 
-    .bottonNav {
+    .npx Nav {
         display: flex;
         flex-direction: column;
         margin: 30px 50px;

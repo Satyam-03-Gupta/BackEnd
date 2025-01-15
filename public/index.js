@@ -95,4 +95,24 @@ function toggleCross() {
 }
 
 
+// -----------lifo prinicple----------------
 
+const container = document.querySelector(".testimonials");
+const cards = Array.from(document.querySelectorAll(".testimonials-card"));
+let position = 0;
+
+function movecards() {
+  card.forEach((card, index) => {
+    card.style.transform = `translateX(${(index - position) * 100}%)`;
+  });
+
+  if (position >= cards.length) {
+    const lastcard = testimonials-card.pop();
+    container.appendChild(lastcard);
+    cards.unshift(lastcard);
+    position = 0;
+
+  }
+  position++;
+}
+setInterval(moveCards, 1000);

@@ -27,6 +27,25 @@ app.get('/privacy.ejs', (req, res) => {
     res.render('privacy')
 })
 
+app.get('/build.ejs', (req, res) => {
+    res.render('build')
+})
+app.get('/weightlifting.ejs', (req, res) => {
+    res.render('weightlifting')
+})
+app.get('/ladiesgym.ejs', (req, res) => {
+    res.render('ladiesgym')
+})
+app.get('/professional.ejs', (req, res) => {
+    res.render('professional')
+})
+app.get('/workout.ejs', (req, res) => {
+    res.render('workout')
+})
+app.get('/specfic.ejs', (req, res) => {
+    res.render('specfic')
+})
+
 
 
 app.post('/', async (req, res) => {
