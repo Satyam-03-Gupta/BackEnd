@@ -28,6 +28,11 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
 </head>
 
 <body>
@@ -150,47 +155,51 @@
         </div>
     </section>
     <section>
-        <div class="testimonials">
-            <div class="testimonial-card">
-                <h2>What Our Members Say</h2>
-                <div class="testimonial">
-                    <img src="public/reviews/s1.png" alt="reloading...">
-                    <p>"I've lost 20 pounds in 3 months following their plans. Highly recommended!"</p>
-                    <h4>- Sarah M.</h4>
+        <div class="testimonials swiper">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-wrapper">
+                <div class="testimonial-card swiper-slide">
+                    <h2>What Our Members Say</h2>
+                    <div class="testimonial">
+                        <img src="public/reviews/s1.png" alt="reloading...">
+                        <p>"I've lost 20 pounds in 3 months following their plans. Highly recommended!"</p>
+                        <h4>- Sarah M.</h4>
+                    </div>
+                </div>
+                <div class="testimonial-card swiper-slide">
+                    <h2>What Our Members Say</h2>
+                    <div class="testimonial">
+                        <img src="public/reviews/s2.png" alt="reloading...">
+                        <p>"I've lost 20 pounds in 3 months following their plans. Highly recommended!"</p>
+                        <h4>- Sarah M.</h4>
+                    </div>
+                </div>
+                <div class="testimonial-card swiper-slide">
+                    <h2>What Our Members Say</h2>
+                    <div class="testimonial">
+                        <img src="public/reviews/s3.png" alt="reloading...">
+                        <p>"I've lost 20 pounds in 3 months following their plans. Highly recommended!"</p>
+                        <h4>- Sarah M.</h4>
+                    </div>
+                </div>
+                <div class="testimonial-card swiper-slide">
+                    <h2>What Our Members Say</h2>
+                    <div class="testimonial">
+                        <img src="public/reviews/s4.png" alt="reloading...">
+                        <p>"I've lost 20 pounds in 3 months following their plans. Highly recommended!"</p>
+                        <h4>- Sarah M.</h4>
+                    </div>
+                </div>
+                <div class="testimonial-card swiper-slide">
+                    <h2>What Our Members Say</h2>
+                    <div class="testimonial">
+                        <img src="public/reviews/s5.png" alt="reloading...">
+                        <p>"I've lost 20 pounds in 3 months following their plans. Highly recommended!"</p>
+                        <h4>- Sarah M.</h4>
+                    </div>
                 </div>
             </div>
-            <div class="testimonial-card">
-                <h2>What Our Members Say</h2>
-                <div class="testimonial">
-                    <img src="public/reviews/s2.png" alt="reloading...">
-                    <p>"I've lost 20 pounds in 3 months following their plans. Highly recommended!"</p>
-                    <h4>- Sarah M.</h4>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <h2>What Our Members Say</h2>
-                <div class="testimonial">
-                    <img src="public/reviews/s3.png" alt="reloading...">
-                    <p>"I've lost 20 pounds in 3 months following their plans. Highly recommended!"</p>
-                    <h4>- Sarah M.</h4>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <h2>What Our Members Say</h2>
-                <div class="testimonial">
-                    <img src="public/reviews/s4.png" alt="reloading...">
-                    <p>"I've lost 20 pounds in 3 months following their plans. Highly recommended!"</p>
-                    <h4>- Sarah M.</h4>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <h2>What Our Members Say</h2>
-                <div class="testimonial">
-                    <img src="public/reviews/s5.png" alt="reloading...">
-                    <p>"I've lost 20 pounds in 3 months following their plans. Highly recommended!"</p>
-                    <h4>- Sarah M.</h4>
-                </div>
-            </div>
+            <div class="swiper-button-next"></div>
     </section>
     <footer>
         <div class="underfooter">
@@ -240,6 +249,21 @@
                 Rv Fitness Team is Powered by KingShuk❤️.</p>
         </div>
         <script src="index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script type="module">
+            import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+            const swiper = new Swiper('.swiper', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+
     </footer>
 </body>
 
