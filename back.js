@@ -27,24 +27,34 @@ app.get('/privacy.ejs', (req, res) => {
     res.render('privacy')
 })
 
-app.get('/build.ejs', (req, res) => {
-    res.render('build')
+app.get('/GymTraining/build', (req, res) => {
+    res.render('GymTraining/build')
 })
-app.get('/weightlifting.ejs', (req, res) => {
-    res.render('weightlifting')
+
+app.get('/LadiesGym/ladiesgym', (req, res) => {
+    res.render('LadiesGym/ladiesgym')
 })
-app.get('/ladiesgym.ejs', (req, res) => {
-    res.render('ladiesgym')
+
+app.get('/WeightLifting/weightlifting', (req, res) => {
+    res.render('WeightLifting/weightlifting')
 })
-app.get('/professional.ejs', (req, res) => {
-    res.render('professional')
+
+app.get('/Professional/professional', (req, res) => {
+    res.render('Professional/professional')
 })
-app.get('/workout.ejs', (req, res) => {
-    res.render('workout')
+
+app.get('/Workout/workout', (req, res) => {
+    res.render('Workout/workout')
 })
-app.get('/specfic.ejs', (req, res) => {
-    res.render('specfic')
+
+app.get('/SpecficWorkout/specfic', (req, res) => {
+    res.render('SpecficWorkout/specfic')
 })
+
+
+app.get("/GymTraining/chest", (req, res) => {
+    res.render('GymTraining/chest')
+});
 
 
 

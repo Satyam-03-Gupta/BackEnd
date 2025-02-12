@@ -157,3 +157,15 @@ body {
 .swiper-button-next:hover {
   color: #000;
 }
+
+/* BODY PART WOKROUT */
+
+.workoutBody{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 24px;
+  gap: 25px;
+  border: 2px solid #e32319;
+}

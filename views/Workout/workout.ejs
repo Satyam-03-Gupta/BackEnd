@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitnessandworkout</title>
+    <link rel="stylesheet" href="/public/newstyle.css">
+    <link rel="stylesheet" href="/public/build.css">
+    <link rel="stylesheet" href="/public/ultility.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+    <header>
+        <div class="index">
+            <span class="hambuger" onclick="toggleMenu();">
+                <i class='fa fa-bars bars'></i>
+                <i class='fa fa-times cross'></i>
+
+            </span>
+
+            <div class="navicon" onclick="window.location.href='/'">
+                <img class="icon" src="/public/images/logo.png" alt="reloading...">
+                <span class="sitename">RV <span class="s" style="color: #e32319;">FITNESS</span></span>
+            </div>
+
+            <div class="nav-item">
+                <span class="menu">MENU</span>
+                <a href="/"><span class="hamburger-nav"><i class='fa fa-home'></i></span>HOME</a>
+                <a href="about.ejs"><span class="hamburger-nav"><i class='fas fa-user-friends'></i></span>ABOUT US</a>
+                <a href="contact.ejs"><span class="hamburger-nav"><i class='fas fa-phone-volume'></i></span>CONTACT
+                    US</a>
+                <a href="privacy.ejs"><span class="hamburger-nav"><i class='fas fa-user-lock'></i></span>PRIVACY
+                    POLICY</a>
+                <div class="hamburger-footer">
+                    <div class="ham-container">
+
+                        <img class="icon" src="./images/logo.png" alt="reloading...">
+                        <h2 class="main-title">RV <span class="color">FITNESS</span></h2>
+                    </div><br>
+                    <div class="hamburger-footer-details">
+                        <p><span class="hambuger-span">Stay fit with RV Fitness! Explore personalized gym schedules to
+                                help you lose
+                                weight, build muscle, or stay in shape. Achieve your fitness goals and transform
+                                your body. Start your journey today! </span> </p>
+                    </div>
+
+                    <div class="cotactbottom">
+                        <ul type="square">
+                            <li><a>+91 9330378959</a> </li>
+                    </div>
+
+
+                </div>
+            </div>
+            <div>
+                <button id="getstarted">Get Started</button>
+                <button class="button " id="dial">CALL NOW</button>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="build-description">
+            <div class="build-description-text">
+                <h1>Build Your Body</h1>
+            </div>
+        </div>
+
+        <div class="main-container">
+            <div class="exercisesection card" onclick="window.location.href='chest.html'"><img src="/public/photos/thechest.png"
+                    alt="error..">
+                <h2>Chest</h2>
+                <p>Are you ready to build a strong and impressive chest? Our specialized workout routines are designed
+                    to
+                    help you develop a well-defined and muscular upper body. Whether you're a beginner or an experienced
+                    lifter, our exercises target the major muscles of the chest, including the pectoralis major and
+                    minor.
+                </p>
+            </div>
+            <div class="exercisesection card" onclick="window.location.href='back.html'"><img src="/public/photos/back.png"
+                    alt="error..">
+                <h2>Back</h2>
+                <p>Are you ready to unlock the strength and power of your back? Our tailored workout routines are
+                    designed
+                    to help you build a robust and impressive upper body. Whether you're a beginner or a seasoned
+                    fitness
+                    enthusiast, our exercises target the major muscles of your back, including the latissimus dorsi,
+                    rhomboids, and trapezius.</p>
+            </div>
+            <div class="exercisesection card" onclick="window.location.href='biceps.html'"> <img
+                    src="/public/photos/originalbiceps.png" alt="error..">
+                <h2>Biceps</h2>
+                <p>Are you ready to sculpt a pair of strong and impressive biceps? Our specialized workout routines are
+                    designed to help you develop the powerful arms you've always desired. Whether you're a beginner or a
+                    seasoned lifter, our exercises target the biceps brachii muscle, the key player in achieving
+                    well-defined and muscular arms.</p>
+            </div>
+            <div class="exercisesection card" onclick="window.location.href='triceps.html'"><img
+                    src="/public/photos/mainbiceps.png" alt="error..">
+                <h2>Triceps</h2>
+                <p>Are you ready to build strong and defined triceps? Our specialized workout routines are designed to
+                    help
+                    you sculpt and strengthen the muscles in the back of your upper arms. Whether you're a beginner or
+                    an
+                    advanced fitness enthusiast, our exercises specifically target the triceps brachii, the key muscle
+                    group
+                    responsible for arm extension and overall arm strength.</p>
+            </div>
+            <div class="exercisesection card" onclick="window.location.href='shoulder.html'"><img
+                    src="/public/photos/mainshoulder.png" alt="error..">
+                <h2>Shoulders</h2>
+                <p>Are you ready to build broad and strong shoulders? Our specialized workout routines are designed to
+                    help
+                    you develop impressive shoulder muscles and enhance your upper body strength. Whether you're a
+                    beginner
+                    or an experienced lifter, our exercises target the deltoid muscles, comprising the anterior, medial,
+                    and
+                    posterior heads, which play a vital role in shoulder stability and aesthetics.</p>
+            </div>
+            <div class="exercisesection card" onclick="window.location.href='legs.html'"><img
+                    src="/public/photos/originalleg.png" alt="error..">
+                <h2>Legs</h2>
+                <p>Are you ready to build a pair of strong and well-defined legs? Our specialized workout routines are
+                    designed to help you develop powerful lower body muscles and enhance your overall leg strength.
+                    Whether
+                    you're a beginner or an experienced fitness enthusiast, our exercises target the major muscles of
+                    the
+                    legs, including the quadriceps, hamstrings, calves, and glutes.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="testimonials swiper">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-wrapper">
+                <div class="testimonial-card swiper-slide">
+                    <h2>What Our Members Say</h2>
+                    <div class="testimonial">
+                        <img src="/public/reviews/s1.png" alt="reloading...">
+                        <p>"I've lost 20 pounds in 3 months following their plans. Highly recommended!"</p>
+                        <h4>- Sarah M.</h4>
+                    </div>
+                </div>
+                <div class="testimonial-card swiper-slide">
+                    <h2>What Our Members Say</h2>
+                    <div class="testimonial">
+                        <img src="/public/reviews/s2.png" alt="reloading...">
+                        <p>"I've lost 20 pounds in 3 months following their plans. Highly recommended!"</p>
+                        <h4>- Sarah M.</h4>
+                    </div>
+                </div>
+                <div class="testimonial-card swiper-slide">
+                    <h2>What Our Members Say</h2>
+                    <div class="testimonial">
+                        <img src="/public/reviews/s3.png" alt="reloading...">
+                        <p>"I've lost 20 pounds in 3 months following their plans. Highly recommended!"</p>
+                        <h4>- Sarah M.</h4>
+                    </div>
+                </div>
+                <div class="testimonial-card swiper-slide">
+                    <h2>What Our Members Say</h2>
+                    <div class="testimonial">
+                        <img src="/public/reviews/s4.png" alt="reloading...">
+                        <p>"I've lost 20 pounds in 3 months following their plans. Highly recommended!"</p>
+                        <h4>- Sarah M.</h4>
+                    </div>
+                </div>
+                <div class="testimonial-card swiper-slide">
+                    <h2>What Our Members Say</h2>
+                    <div class="testimonial">
+                        <img src="/public/reviews/s5.png" alt="reloading...">
+                        <p>"I've lost 20 pounds in 3 months following their plans. Highly recommended!"</p>
+                        <h4>- Sarah M.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+    </section>
+    <footer>
+        <div class="underfooter">
+            <div class="bNavicon">
+                <div class="bNcontainer">
+
+                    <img class="icon" src="/public/images/logo.png" alt="reloading...">
+                    <h2 class="main-title">RV <span class="color">FITNESS</span></h2>
+                </div><br>
+                <div class="footercontainer">
+                    <p><span>Stay fit with TimetoSweat! Our website offers a comprehensive gym workout schedule to help
+                            you
+                            achieve your fitness goals. Whether you're looking to lose weight, build muscle, or simply
+                            stay
+                            in shape, we've got you covered. Get ready to sweat and transform your body. Start your
+                            fitness
+                            journey today!</span> </p>
+                    <div class="imagedesign2">
+                        <img src="/public/images/bmi.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="bottonNav">
+                <div class="aboutbottom">
+                    <span>ABOUT US</span>
+                    <ul type="square">
+                        <li><a href="about.ejs">RV Fitness Club</a></li>
+                </div>
+                <div class="terms">
+                    <span>TERMS</span>
+                    <ul type="square">
+                        <li><a href="privacy.ejs">Terms and condition</a></li>
+                </div>
+                <div class="cotactbottom">
+                    <span>CONTACT</span>
+                    <ul type="square">
+                        <li><a>+91 9330378959</a> </li>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyrightfooter">
+            <p><br><br>Copyrights © 2023 Rv Fitness Club. All rights reserved.
+                Rv Fitness Team is Powered by KingShuk❤️.</p>
+        </div>
+        <script src="index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script type="module">
+            import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+            const swiper = new Swiper('.swiper', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+
+    </footer>
+</body>
+
+</html>

@@ -94,14 +94,13 @@ function toggleCross() {
   }
 }
 
-
 // -----------lifo prinicple----------------
 
 const container = document.querySelector(".testimonials");
 const cards = Array.from(document.querySelectorAll(".testimonials-card"));
 let position = 0;
 
-function movecards() {
+function moveCards() {
   card.forEach((card, index) => {
     card.style.transform = `translateX(${(index - position) * 100}%)`;
   });
