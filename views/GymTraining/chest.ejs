@@ -31,8 +31,6 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-
 </head>
 
 <body>
@@ -84,36 +82,81 @@
             </div>
         </div>
     </header>
-    <section>
+    <section class="workoutBody">
         <div class="headingTitle">
             <h1>Chest Workout</h1>
         </div>
 
-        <div class="exercisecontainer">
-            <div class="ExerciseCard"><video src="/public/videos/barbell-bench-press.mp4" alt="error..">
+        <div class="workoutcontainer">
+            <div class="ExerciseCard">
+                <span class="VideoContainer">
+                    <video src="/public/videos/barbell-bench-press.mp4" alt="error.." controls loop></video>
+
+                    <span class="hambuger" onclick="toggleExercise();">
+                        <button id="exerciseinfo">Instructions:</button>
+                        <i class='fa fa-times cross'></i>
+
+                    </span>
+
+                </span>
+                <span class="exerciseDescription">
                     <h2>Barbell Bench Press</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus asperiores sapiente
-                        maiores, a non distinctio.</p>
+                    <h4>Instructions:</h4>
+                    <p>1. Lie back on a flat bench holding a barbell with a shoulder-width grip.</p>
+                    <p>2. Lift the bar from the rack and hold it straight over you with your arms locked.</p>
+                    <p>3. Inhale and slowly lower the bar until it touches your middle chest.</p>
+                    <p>4. Push the bar back to the starting position as you exhale.</p>
+                    <p>5. Repeat for the recommended amount of repetitions.</p>
+                </span>
             </div>
-            <div class="ExerciseCard"><video src="/public/videos/barbell-bench-press.mp4" alt="error..">
-                    <h2>Barbell Bench Press</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus asperiores sapiente
-                        maiores, a non distinctio.</p>
+            <div class="ExerciseCard">
+                <span class="VideoContainer">
+                    <video src="/public/videos/dumbbell-chest-fly-muscles.mp4" alt="error.." controls loop>
+                    </video>
+                    <button>Instructions:</button>
+                </span>
+
+                <span class="exerciseDescription">
+                    <h2>Dumbbell Chest Fly</h2>
+                    <h4>Instructions:</h4>
+                    <p>1. Lie on a flat bench, holding dumbbells above your chest.</p>
+                    <p>2. Keep a slight bend in your elbows throughout the movement.</p>
+                    <p>3. Lower the dumbbells in a wide arc until you feel a stretch.</p>
+                    <p>4. Avoid going too deep to prevent shoulder strain.</p>
+                    <p>5. Squeeze your chest and bring the dumbbells back up.</p>
+                    <p>6. Repeat for the desired reps.</p>
+
+                </span>
             </div>
-            <div class="ExerciseCard"><video src="/public/videos/barbell-bench-press.mp4" alt="error..">
-                    <h2>Barbell Bench Press</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus asperiores sapiente
-                        maiores, a non distinctio.</p>
+            <div class="ExerciseCard">
+                <span class="VideoContainer">
+                    <video src="/public/videos/Dumbbell-Incline-Fly.mp4" alt="error.." controls loop></video></span>
+                <span class="exerciseDescription">
+                    <h2>Incline Dumbbell Fly</h2>
+                    <h4>Instructions:</h4>
+                    <p>1. Lie on an incline bench, holding dumbbells above your chest.</p>
+                    <p>2. Keep a slight bend in your elbows throughout the movement.</p>
+                    <p>3. Lower the dumbbells in a wide arc until you feel a chest stretch.</p>
+                    <p>4. Avoid lowering too deep to prevent shoulder strain.</p>
+                    <p>5. Squeeze your chest and bring the dumbbells back up.</p>
+                    <p>6. Repeat for the desired reps.</p>
+
+                </span>
             </div>
-            <div class="ExerciseCard"><video src="/public/videos/barbell-bench-press.mp4" alt="error..">
-                    <h2>Barbell Bench Press</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus asperiores sapiente
-                        maiores, a non distinctio.</p>
-            </div>
-            <div class="ExerciseCard"><video src="/public/videos/barbell-bench-press.mp4" alt="error..">
-                    <h2>Barbell Bench Press</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus asperiores sapiente
-                        maiores, a non distinctio.</p>
+            <div class="ExerciseCard">
+                <span class="VideoContainer">
+                    <video src="/public/videos/Incline-Barbell-Bench-Press1.mp4" alt="error.." controls
+                        loop></video></span>
+                <span class="exerciseDescription">
+                    <h2>Incline Barbell Bench Press</h2>
+                    <h4>Instructions:</h4>
+                    <p>1. Lie on an incline bench, gripping the barbell shoulder-width apart.</p>
+                    <p>2. Unrack the bar and hold it above your chest with locked arms.</p>
+                    <p>3. Inhale and lower the bar until it touches your upper chest.</p>
+                    <p>4. Exhale and press the bar back to the starting position.</p>
+                    <p>5. Keep your core tight and avoid bouncing the bar.</p>
+                    <p>6. Repeat for the desired reps.</p>
+                </span>
             </div>
 
 

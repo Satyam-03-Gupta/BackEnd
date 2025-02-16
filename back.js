@@ -71,37 +71,37 @@ app.post('/', async (req, res) => {
     res.render('thankyou')
 })
 
-app.get('/get-users', (req, res) => {
-    userModel.find({
-        username: 'a'
+// app.get('/get-users', (req, res) => {
+//     userModel.find({
+//         username: 'a'
 
-    })
-        .then((user) => {
-            console.log(user)
-            res.send(user)
-        })
-})
+//     })
+//         .then((user) => {
+//             console.log(user)
+//             res.send(user)
+//         })
+// })
 
-app.get('/update-user', async (req, res) => {
-    await userModel.findOneAndUpdate({
-        username: 'admin'
-    }, {
-        email: 'a@gmail.com'
-    })
-    res.send("user updated")
-})
+// app.get('/update-user', async (req, res) => {
+//     await userModel.findOneAndUpdate({
+//         username: 'admin'
+//     }, {
+//         email: 'a@gmail.com'
+//     })
+//     res.send("user updated")
+// })
 
 
-app.get('/delete-user', async (req, res) => {
-    await userModel.findOneAndDelete({
-        username: 'admin'
-    })
-    res.send('user deleted')
-})
-app.post('/get-form-data', (req, res) => {
-    console.log(req.body)
-    res.send('data received')
-})
+// app.get('/delete-user', async (req, res) => {
+//     await userModel.findOneAndDelete({
+//         username: 'admin'
+//     })
+//     res.send('user deleted')
+// })
+// app.post('/get-form-data', (req, res) => {
+//     console.log(req.body)
+//     res.send('data received')
+// })
 
 app.listen(1432)
 

@@ -94,6 +94,12 @@ function toggleCross() {
   }
 }
 
+function toggleExercise() {
+  const exercise = document.querySelector(".exerciseDescription");
+  exercise.classList.toggle("active");
+  toggleCross();
+}
+
 // -----------lifo prinicple----------------
 
 const container = document.querySelector(".testimonials");
