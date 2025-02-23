@@ -94,11 +94,36 @@ function toggleCross() {
   }
 }
 
-function toggleExercise() {
-  const exercise = document.querySelector(".exerciseDescription");
-  exercise.classList.toggle("active");
-  toggleCross();
+function toggleExercise(event) {
+  const button = event.target;
+  const exerciseCard = button.closest(".ExerciseCard");
+  const exerciseDescription = exerciseCard.querySelector(".exerciseDescription");
+  exerciseDescription.classList.toggle("active");
 }
+
+function toggleexit(event) {
+  const closeButtons = event.target;
+  const exerciseDescription = closeButtons.closest(".exerciseDescription");
+  exerciseDescription.classList.remove("active");
+}
+
+// function toggleExercise(event) {
+//   const exerciseCard = event.target.closest(".ExerciseCard");
+//   if (!exerciseCard) return;
+
+//   const descExercise = exerciseCard.querySelector(".exerciseDescription");
+//   descExercise.classList.toggle("active");
+// }
+
+// function toggleexit(event) {
+//   const exerciseCard = event.target.closest(".ExerciseCard");
+//   if (!exerciseCard) return;
+
+//   const descExercise = exerciseCard.querySelector(".exerciseDescription");
+//   descExercise.classList.remove("active");
+// }
+
+
 
 // -----------lifo prinicple----------------
 
@@ -112,7 +137,7 @@ function moveCards() {
   });
 
   if (position >= cards.length) {
-    const lastcard = testimonials-card.pop();
+    const lastcard = testimonials - card.pop();
     container.appendChild(lastcard);
     cards.unshift(lastcard);
     position = 0;

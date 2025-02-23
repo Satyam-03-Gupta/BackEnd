@@ -27,8 +27,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
 </head>
 
 <body>
@@ -80,143 +84,74 @@
             </div>
         </div>
     </header>
-    <section class="workoutBody">
-        <div class="headingTitle">
-            <h1>Chest Workout</h1>
+    <section>
+        <div class="build-description">
+            <div class="build-description-text">
+                <h1>Build Your Body</h1>
+            </div>
         </div>
 
-        <div class="workoutcontainer">
-            <div class="ExerciseCard">
-                <span class="VideoContainer">
-                    <video src="/public/videos/barbell-bench-press.mp4" alt="error.." controls loop></video>
-
-                    <span class="exercise">
-                        <button id="exerciseinfo" onclick="toggleExercise(event);">Instructions:</button>
-                    </span>
-
-                </span>
-                <span class="exerciseDescription">
-                    <span class="exercise">
-                        <i class='fa fa-times exercisecross' onclick="toggleexit(event);"></i>
-                    </span>
-
-                    <h2 class="ExerciseHeading">Barbell Bench Press</h2>
-                    <h4 class="Exercise-Sub-heading">Instructions:</h4>
-                    <p>1. Lie back on a flat bench holding a barbell with a shoulder-width grip.</p>
-                    <p>2. Lift the bar from the rack and hold it straight over you with your arms locked.</p>
-                    <p>3. Inhale and slowly lower the bar until it touches your middle chest.</p>
-                    <p>4. Push the bar back to the starting position as you exhale.</p>
-                    <p>5. Repeat for the recommended amount of repetitions.</p>
-                </span>
+        <div class="main-container">
+            <div class="exercisesection card" onclick="window.location.href='/chest'"><img src="/public/photos/thechest.png"
+                    alt="error..">
+                <h2>Chest</h2>
+                <p>Are you ready to build a strong and impressive chest? Our specialized workout routines are designed
+                    to
+                    help you develop a well-defined and muscular upper body. Whether you're a beginner or an experienced
+                    lifter, our exercises target the major muscles of the chest, including the pectoralis major and
+                    minor.
+                </p>
             </div>
-
-            <div class="ExerciseCard">
-                <span class="VideoContainer">
-                    <video src="/public/videos/Incline-Barbell-Bench-Press1.mp4" alt="error.." controls
-                        loop></video></span>
-
-                <span class="exercise">
-                    <button id="exerciseinfo" onclick="toggleExercise(event);">Instructions:</button>
-                </span>
-
-                </span>
-                <span class="exerciseDescription">
-                    <span class="exercise">
-                        <i class='fa fa-times exercisecross' onclick="toggleexit(event);"></i>
-                    </span>
-
-                    <h2 class="ExerciseHeading">Incline Barbell Bench Press</h2>
-                    <h4 class="Exercise-Sub-heading">Instructions:</h4>
-                    <p>1. Lie on an incline bench, gripping the barbell slightly wider than shoulder-width.</p>
-                    <p>2. Unrack the bar and hold it above your chest with straight arms.</p>
-                    <p>3. Lower the bar slowly to your upper chest while inhaling.</p>
-                    <p>4. Press the bar back up explosively as you exhale.</p>
-                    <p>5. Keep your back slightly arched and feet planted firmly.</p>
-                    <p>6. Repeat for the desired number of reps.</p>
-
-                </span>
+            <div class="exercisesection card" onclick="window.location.href='back'"><img src="/public/photos/back.png"
+                    alt="error..">
+                <h2>Back</h2>
+                <p>Are you ready to unlock the strength and power of your back? Our tailored workout routines are
+                    designed
+                    to help you build a robust and impressive upper body. Whether you're a beginner or a seasoned
+                    fitness
+                    enthusiast, our exercises target the major muscles of your back, including the latissimus dorsi,
+                    rhomboids, and trapezius.</p>
             </div>
-
-            <div class="ExerciseCard">
-                <span class="VideoContainer">
-                    <video src="/public/videos/dumbbell-chest-fly-muscles.mp4" alt="error.." controls loop>
-                    </video>
-                    <span class="exercise">
-                        <button id="exerciseinfo" onclick="toggleExercise(event);">Instructions:</button>
-                    </span>
-
-                </span>
-                <span class="exerciseDescription">
-                    <span class="exercise">
-                        <i class='fa fa-times exercisecross' onclick="toggleexit(event);"></i>
-                    </span>
-
-                    <h2 class="ExerciseHeading">Dumbbell Chest Fly</h2>
-                    <h4 class="Exercise-Sub-heading">Instructions:</h4>
-                    <p>1. Lie on a flat bench, holding dumbbells above your chest.</p>
-                    <p>2. Keep a slight bend in your elbows throughout the movement.</p>
-                    <p>3. Lower the dumbbells in a wide arc until you feel a stretch.</p>
-                    <p>4. Avoid going too deep to prevent shoulder strain.</p>
-                    <p>5. Squeeze your chest and bring the dumbbells back up.</p>
-                    <p>6. Repeat for the desired reps.</p>
-                </span>
+            <div class="exercisesection card" onclick="window.location.href='biceps'"> <img
+                    src="/public/photos/originalbiceps.png" alt="error..">
+                <h2>Biceps</h2>
+                <p>Are you ready to sculpt a pair of strong and impressive biceps? Our specialized workout routines are
+                    designed to help you develop the powerful arms you've always desired. Whether you're a beginner or a
+                    seasoned lifter, our exercises target the biceps brachii muscle, the key player in achieving
+                    well-defined and muscular arms.</p>
             </div>
-
-            <div class="ExerciseCard">
-                <span class="VideoContainer">
-                    <video src="/public/videos/Dumbbell-Incline-Fly.mp4" alt="error.." controls loop></video></span>
-
-                <span class="exercise">
-                    <button id="exerciseinfo" onclick="toggleExercise(event);">Instructions:</button>
-                </span>
-
-                </span>
-                <span class="exerciseDescription">
-                    <span class="exercise">
-                        <i class='fa fa-times exercisecross' onclick="toggleexit(event);"></i>
-                    </span>
-
-                    <h2 class="ExerciseHeading">Incline Dumbbell Fly</h2>
-                    <h4 class="Exercise-Sub-heading">Instructions:</h4>
-                    <p>1. Lie on an incline bench, holding dumbbells above your chest.</p>
-                    <p>2. Keep elbows slightly bent, palms facing each other.</p>
-                    <p>3. Lower arms in a wide arc until you feel a chest stretch.</p>
-                    <p>4. Avoid going too deep to protect your shoulders.</p>
-                    <p>5. Squeeze your chest and bring the dumbbells back up.</p>
-                    <p>6. Repeat for the desired number of reps.</p>
-                </span>
+            <div class="exercisesection card" onclick="window.location.href='triceps'"><img
+                    src="/public/photos/mainbiceps.png" alt="error..">
+                <h2>Triceps</h2>
+                <p>Are you ready to build strong and defined triceps? Our specialized workout routines are designed to
+                    help
+                    you sculpt and strengthen the muscles in the back of your upper arms. Whether you're a beginner or
+                    an
+                    advanced fitness enthusiast, our exercises specifically target the triceps brachii, the key muscle
+                    group
+                    responsible for arm extension and overall arm strength.</p>
             </div>
-
-
-            <div class="ExerciseCard">
-                <span class="VideoContainer">
-                    <video src="/public/videos/Cable-Low-Fly_Chest_1.mp4" alt="error.." controls loop></video></span>
-
-                <span class="exercise">
-                    <button id="exerciseinfo" onclick="toggleExercise(event);">Instructions:</button>
-                </span>
-
-                </span>
-                <span class="exerciseDescription">
-                    <span class="exercise">
-                        <i class='fa fa-times exercisecross' onclick="toggleexit(event);"></i>
-                    </span>
-
-                    <h2 class="ExerciseHeading">Low Cable Fly</h2>
-                    <h4 class="Exercise-Sub-heading">Instructions:</h4>
-                    <p>1. Set the cables to the lowest position and grab the handles.</p>
-                    <p>2. Step forward with a slight lean, arms extended downward.</p>
-                    <p>3. Keep a slight bend in your elbows and lift arms in an arc.</p>
-                    <p>4. Squeeze your chest at the top, bringing hands together.</p>
-                    <p>5. Slowly return to the starting position with control.</p>
-                    <p>6. Repeat for the desired number of reps.</p>
-
-                </span>
+            <div class="exercisesection card" onclick="window.location.href='shoulder'"><img
+                    src="/public/photos/mainshoulder.png" alt="error..">
+                <h2>Shoulders</h2>
+                <p>Are you ready to build broad and strong shoulders? Our specialized workout routines are designed to
+                    help
+                    you develop impressive shoulder muscles and enhance your upper body strength. Whether you're a
+                    beginner
+                    or an experienced lifter, our exercises target the deltoid muscles, comprising the anterior, medial,
+                    and
+                    posterior heads, which play a vital role in shoulder stability and aesthetics.</p>
             </div>
-
-
-
-
+            <div class="exercisesection card" onclick="window.location.href='legs'"><img
+                    src="/public/photos/originalleg.png" alt="error..">
+                <h2>Legs</h2>
+                <p>Are you ready to build a pair of strong and well-defined legs? Our specialized workout routines are
+                    designed to help you develop powerful lower body muscles and enhance your overall leg strength.
+                    Whether
+                    you're a beginner or an experienced fitness enthusiast, our exercises target the major muscles of
+                    the
+                    legs, including the quadriceps, hamstrings, calves, and glutes.</p>
+            </div>
         </div>
     </section>
     <section>

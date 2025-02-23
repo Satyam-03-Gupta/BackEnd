@@ -180,9 +180,11 @@ body {
   flex-wrap: wrap;
   gap: 25px;
   border: 2px solid #434343;
+  border-collapse: collapse;
 }
 
 .ExerciseCard {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -210,6 +212,12 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+.exercise {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
 .exerciseDescription {
   display: flex;
   flex-direction: column;
@@ -225,14 +233,15 @@ body {
   top: 10px;
   right: 10px;
   cursor: pointer;
+
 }
 
-@media screen and (max-width: 1300px) {
-  .workoutBody {
-    margin: 0 3rem;
-    margin-top: 5rem;
-  }
+.exercise {
+  display: none;
 }
+
+
+/* --------------------media Queries------------------- */
 
 @media screen and (max-width: 680px) {
   .workoutBody {
@@ -240,14 +249,109 @@ body {
     margin-top: 5rem;
   }
 
-  .exerciseDescription {
-    position: absolute;
-    backdrop-filter: blur(10px);
-    border: 2px solid #e32319;
-    padding: 15px 0 0 15px;
+  .ExerciseCard {
+    display: flex;
+    justify-content: center;
   }
 
   .VideoContainer {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .exercise {
+    display: block;
+  }
+
+  #exerciseinfo {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .workoutBody {
+    margin: 0 3rem;
+    margin-top: 5rem;
+  }
+
+  .exerciseDescription {
+    display: none;
+    position: absolute;
+  }
+
+  .exerciseDescription.active {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    color: #f4f4f4;
+
+  }
+
+  .exercisecross {
+    position: absolute;
+    z-index: 2;
+    top: 15px;
+    right: 15px;
+    transition: all 1s ease;
+    border: 3px solid #e32319;
+    padding: 7px 11px;
+    border-radius: 50px;
+  }
+
+  .ExerciseHeading {
+    color: #e32319;
+    text-shadow: 1px 1px 2px #000;
+  }
+
+  .Exercise-Sub-heading {
+    color: blue;
+    text-shadow: 1px 1px 2px dodgerblue;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .workoutBody {
+    margin: 0 1rem;
+    margin-top: 5rem;
+  }
+
+  #exerciseinfo {
+    font-size: 7px;
+    padding: 2px 7px;
+  }
+
+  .ExerciseCard {
+    display: flex;
+    justify-content: center;
+  }
+
+  .VideoContainer {
+    width: 100%;
+  }
+
+  .ExerciseHeading {
+    font-size: 17px !important;
+  }
+
+  .Exercise-Sub-heading {
+    font-size: 13px !important;
+  }
+
+  .exerciseDescription.active {
+    padding: 2px 4px;
+  }
+
+  .exerciseDescription.active>P {
+    line-height: 2;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  .exerciseDescription.active>P {
+    line-height: 1.5;
   }
 }
