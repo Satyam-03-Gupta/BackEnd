@@ -52,8 +52,8 @@ app.get('/GymTraining/triceps', (req, res) => {
     res.render('GymTraining/triceps')
 })
 
-app.get("/GymTraining/leg", (req, res) => {
-    res.render('GymTraining/leg')
+app.get("/GymTraining/legs", (req, res) => {
+    res.render('GymTraining/legs')
 });
 
 // -----------------------------subtraining---------------------------
