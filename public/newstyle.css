@@ -366,6 +366,7 @@ button,
     padding: 27px 35px;
     display: flex;
     flex-direction: column;
+    background: #f7f7f7;
 }
 
 .box img {
@@ -954,6 +955,12 @@ iframe {
     text-transform: capitalize;
 }
 
+#contact-section,
+#contact,
+.background-cover-contact {
+    min-height: 60rem;
+}
+
 
 @media screen and (max-width: 1300px) {
 
@@ -1066,7 +1073,7 @@ iframe {
     #contact-section,
     #contact,
     .background-cover-contact {
-        min-height: 80rem;
+        min-height: 90rem;
     }
 
     .contactbox {
@@ -1168,7 +1175,7 @@ iframe {
     #contact-section,
     #contact,
     .background-cover-contact {
-        min-height: 72rem;
+        min-height: 82rem;
     }
 
     .containerHW {
@@ -1302,11 +1309,16 @@ iframe {
         padding: 20px 0 0 0;
     }
 
-    #contact-section,
+    .contact-left input,
+    .contact-left textarea {
+        width: 100%;
+    }
+
+    /* #contact-section,
     #contact,
     .background-cover-contact {
         min-height: 72rem;
-    }
+    } */
 
     .footercontainer p {
         max-width: 100% !important;

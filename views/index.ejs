@@ -8,12 +8,14 @@
     <title>Fitnessandworkout</title>
     <link rel="stylesheet" href="newstyle.css">
     <link rel="stylesheet" href="ultility.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <!-- Font Awesome CDN -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
@@ -78,6 +80,25 @@
                 <button id="getstarted">Get Started</button>
                 <button class="button " id="dial">CALL NOW</button>
             </div>
+
+            <main>
+                <% if (user) { %>
+                    <img src="/photos/user-circle-solid.jpg " class="profile-img" alt="Profile Picture"
+                        onclick="ProfileIcon()">
+                    <section class="profile-info">
+                        <h2>Welcome, <%= user.username %>!</h2>
+                        <p>
+                            <%= user.email %>
+                        </p>
+                        <form action="/logout" method="POST">
+                            <button type="submit">Logout</button>
+                        </form>
+                    </section>
+                    <% } else { %>
+                        <a href="/login">Login here</a>
+                        <% } %>
+            </main>
+
         </div>
     </header>
     <div class="body">
@@ -101,7 +122,7 @@
                                 speed: 180,
                                 loop: true,
                             })
-                                .type("RV FITNESS CLUB")
+                                .type("RV FITNESS WORLD")
                                 .pause(1000)
                                 .delete()
                                 .type("Unisex Gym with Top Hygiene")
@@ -279,7 +300,7 @@
             <h3 class="subtitles color">BEST TRAINING</h3>
 
             <div class="Service-provide">
-                <div class="imgcontainer"  onclick="window.location.href='/GymTraining/build'">
+                <div class="imgcontainer" onclick="window.location.href='/GymTraining/build'">
                     <img src="./images/image1.jpg" alt="">
                     <p>GYM TRAINING</p>
                 </div>
@@ -295,7 +316,7 @@
                     <img src="./images/about5.jpg" alt="">
                     <p>PROFESSIONAL TRAINING</p>
                 </div>
-                <div class="imgcontainer"onclick="window.location.href='/Workout/workout'">
+                <div class="imgcontainer" onclick="window.location.href='/Workout/workout'">
                     <img src="./images/about3.jpg" alt="">
                     <p>WORKOUT</p>
                 </div>

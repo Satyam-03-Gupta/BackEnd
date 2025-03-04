@@ -107,6 +107,11 @@ function toggleexit(event) {
   exerciseDescription.classList.remove("active");
 }
 
+function ProfileIcon() {
+  const profileimg = document.querySelector('.profile-info');
+  profileimg.classList.toggle('active');
+}
+
 // function toggleExercise(event) {
 //   const exerciseCard = event.target.closest(".ExerciseCard");
 //   if (!exerciseCard) return;
